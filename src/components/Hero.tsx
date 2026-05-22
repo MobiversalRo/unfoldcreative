@@ -2,11 +2,9 @@
 
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
 
 export default function Hero() {
   const t = useTranslations("hero");
-  const marqueeRef = useRef<HTMLDivElement>(null);
 
   const marqueeText = "SHOES · ACCESSORIES · DESIGN · FOOTWEAR · CRAFT · INNOVATION · ";
 
@@ -22,6 +20,19 @@ export default function Hero() {
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/60 via-[#0a0a0a]/40 to-[#0a0a0a]" />
+      </div>
+
+      {/* Floating data-viz video — top right */}
+      <div className="absolute top-16 right-0 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 z-10 opacity-60 mix-blend-screen pointer-events-none">
+        <video
+          src="/videos/data-viz.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/images/poster-data-viz.png"
+          className="w-full h-full object-cover"
+        />
       </div>
 
       {/* Main hero content */}
@@ -53,6 +64,7 @@ export default function Hero() {
               alt="Featured footwear design"
               fill
               className="object-cover"
+              priority
             />
           </div>
         </div>
@@ -60,19 +72,25 @@ export default function Hero() {
 
       {/* Scrolling marquee */}
       <div className="relative z-10 border-t border-white/10 py-4 overflow-hidden">
-        <div className="flex animate-[marquee_20s_linear_infinite] whitespace-nowrap">
-          {[...Array(3)].map((_, i) => (
-            <span key={i} className="text-white/20 text-xs tracking-[0.4em] uppercase mx-8 shrink-0">
+        <div
+          className="flex whitespace-nowrap"
+          style={{ animation: "marquee 20s linear infinite" }}
+        >
+          {[...Array(4)].map((_, i) => (
+            <span
+              key={i}
+              className="text-white/20 text-xs tracking-[0.4em] uppercase mx-8 shrink-0"
+            >
               {marqueeText}
             </span>
           ))}
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes marquee {
           0% { transform: translateX(0); }
-          100% { transform: translateX(-33.333%); }
+          100% { transform: translateX(-50%); }
         }
       `}</style>
     </section>

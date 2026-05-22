@@ -1,22 +1,24 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 
 export default function Philosophy() {
   const t = useTranslations("philosophy");
 
   return (
     <section className="relative py-32 lg:py-48 px-6 overflow-hidden">
-      {/* Full-bleed background */}
+      {/* Full-bleed video background */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/break-rules-neon.jpeg"
-          alt="Break the Rules"
-          fill
-          className="object-cover opacity-30"
+        <video
+          src="/videos/break-rules.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/images/poster-break-rules.jpeg"
+          className="w-full h-full object-cover opacity-40"
         />
-        <div className="absolute inset-0 bg-[#0a0a0a]/70" />
+        <div className="absolute inset-0 bg-[#0a0a0a]/65" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">

@@ -2,18 +2,22 @@
 
 import { useTranslations } from "next-intl";
 
-const icons = ["01", "02", "03", "04", "05", "06"];
-
 export default function Services() {
   const t = useTranslations("services");
 
   const items = [
-    { num: "01", title: t("item1_title"), desc: t("item1_desc") },
-    { num: "02", title: t("item2_title"), desc: t("item2_desc") },
-    { num: "03", title: t("item3_title"), desc: t("item3_desc") },
-    { num: "04", title: t("item4_title"), desc: t("item4_desc") },
-    { num: "05", title: t("item5_title"), desc: t("item5_desc") },
-    { num: "06", title: t("item6_title"), desc: t("item6_desc") },
+    { num: "01", title: t("item1_title"), desc: t("item1_desc"), video: null },
+    { num: "02", title: t("item2_title"), desc: t("item2_desc"), video: null },
+    { num: "03", title: t("item3_title"), desc: t("item3_desc"), video: null },
+    { num: "04", title: t("item4_title"), desc: t("item4_desc"), video: null },
+    { num: "05", title: t("item5_title"), desc: t("item5_desc"), video: null },
+    {
+      num: "06",
+      title: t("item6_title"),
+      desc: t("item6_desc"),
+      video: "/videos/robot-shoe.mp4",
+      poster: "/images/poster-robot.png",
+    },
   ];
 
   return (
@@ -34,12 +38,27 @@ export default function Services() {
           {items.map((item, i) => (
             <div
               key={item.num}
-              className={`group p-8 lg:p-10 border-b border-white/10 hover:bg-white/[0.03] transition-colors duration-300 ${
-                i % 3 !== 2 ? "lg:border-r" : ""
-              } ${i % 2 !== 1 ? "md:border-r lg:border-r-0" : "md:border-r-0"} ${
-                i % 3 !== 2 ? "lg:border-r" : ""
-              }`}
+              className={`group relative overflow-hidden p-8 lg:p-10 border-b border-white/10 hover:bg-white/[0.03] transition-colors duration-300
+                ${i % 3 !== 2 ? "lg:border-r border-white/10" : ""}
+                ${i % 2 === 0 ? "md:border-r border-white/10 lg:border-r-0" : ""}
+                ${i % 3 !== 2 ? "lg:border-r" : ""}
+              `}
             >
+              {/* Video background for AI card */}
+              {item.video && (
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500 pointer-events-none">
+                  <video
+                    src={item.video}
+                    poster={item.poster}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              )}
+
               <p className="text-white/20 text-xs tracking-widest mb-6 font-mono">{item.num}</p>
               <h3 className="text-white text-xl font-semibold mb-4 uppercase tracking-wide">
                 {item.title}
