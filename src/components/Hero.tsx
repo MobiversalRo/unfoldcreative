@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import LazyVideo from "./LazyVideo";
 
 export default function Hero() {
   const t = useTranslations("hero");
@@ -24,12 +25,8 @@ export default function Hero() {
 
       {/* Floating data-viz video — top right */}
       <div className="absolute top-16 right-0 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 z-10 opacity-60 mix-blend-screen pointer-events-none">
-        <video
+        <LazyVideo
           src="/videos/data-viz.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
           poster="/images/poster-data-viz.png"
           className="w-full h-full object-cover"
         />

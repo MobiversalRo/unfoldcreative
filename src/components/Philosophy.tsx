@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import LazyVideo from "./LazyVideo";
 
 export default function Philosophy() {
   const t = useTranslations("philosophy");
@@ -9,12 +10,8 @@ export default function Philosophy() {
     <section className="relative py-32 lg:py-48 px-6 overflow-hidden">
       {/* Full-bleed video background */}
       <div className="absolute inset-0 z-0">
-        <video
+        <LazyVideo
           src="/videos/break-rules.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
           poster="/images/poster-break-rules.jpeg"
           className="w-full h-full object-cover opacity-40"
         />

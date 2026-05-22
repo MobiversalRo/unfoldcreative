@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import LazyVideo from "./LazyVideo";
 
 export default function Services() {
   const t = useTranslations("services");
@@ -47,13 +48,9 @@ export default function Services() {
               {/* Video background for AI card */}
               {item.video && (
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500 pointer-events-none">
-                  <video
+                  <LazyVideo
                     src={item.video}
                     poster={item.poster}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
                     className="w-full h-full object-cover"
                   />
                 </div>
