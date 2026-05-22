@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "about": "Über uns",
+    "services": "Leistungen",
+    "work": "Projekte",
+    "process": "Prozess",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "tagline": "Wir kreieren Schuhe und Accessoires für die Verbraucher der Welt",
+    "cta": "Unsere Arbeit entdecken",
+    "scroll": "Scrollen zum Entdecken"
+  },
+  "about": {
+    "label": "Über uns",
+    "title": "Design ist unsere Obsession,\nHandwerk ist unsere Sprache",
+    "description": "Unfold Creative ist ein Full-Service-Studio für Schuhdesign und -entwicklung. Wir überbrücken die Lücke zwischen kühner kreativer Vision und industrieller Produktion — wir übersetzen Konzepte in Schuhe und Accessoires, die Märkte bewegen.",
+    "quote": "Wir folgen keinen Trends. Wir setzen sie.",
+    "stat1_value": "15+",
+    "stat1_label": "Jahre Erfahrung",
+    "stat2_value": "200+",
+    "stat2_label": "Abgeschlossene Projekte",
+    "stat3_value": "50+",
+    "stat3_label": "Globale Marken"
+  },
+  "services": {
+    "label": "Was wir tun",
+    "title": "Ganzheitliche Schuhdesign-\nDienstleistungen",
+    "item1_title": "Konzept & Design",
+    "item1_desc": "Vom ersten Briefing bis zur finalen Skizze — wir entwickeln Schuhkonzepte, die kreative Grenzen sprengen und dabei kommerziell tragfähig bleiben.",
+    "item2_title": "Prototypenentwicklung",
+    "item2_desc": "Praxisnahe Prototypenerstellung mit Zugang zu erstklassigen Fabriken und Materiallieferanten in Europa und Asien.",
+    "item3_title": "Markenidentität",
+    "item3_desc": "Wir gestalten die visuelle Sprache und Markenerzählung, die Ihre Schuhkollektion sofort erkennbar macht.",
+    "item4_title": "Trendforschung",
+    "item4_desc": "Tiefgehende Trendprognosen speziell für den Schuh- und Accessoires-Markt — immer eine Saison voraus.",
+    "item5_title": "Produktionsberatung",
+    "item5_desc": "Umfassende Unterstützung vom Schnittmuster bis zur Massenproduktion — Qualität auf jedem Schritt gesichert.",
+    "item6_title": "KI & Digitales Design",
+    "item6_desc": "Modernste generative Designwerkzeuge kombiniert mit traditionellem Handwerk für die Zukunft des Schuhdesigns."
+  },
+  "work": {
+    "label": "Ausgewählte Projekte",
+    "title": "Projekte, die\nMaßstäbe setzen",
+    "view_all": "Alle Projekte ansehen"
+  },
+  "process": {
+    "label": "Unser Prozess",
+    "title": "Von der Skizze\nzum Regal",
+    "step1_title": "Entdecken",
+    "step1_desc": "Wir tauchen in Ihre Markenwelt ein — und verstehen Ihren Kunden, Ihren Markt und Ihren Ehrgeiz.",
+    "step2_title": "Gestalten",
+    "step2_desc": "Skizzen, Moodboards, Materialauswahl. Wir erkunden jede kreative Richtung, bevor wir die richtige finden.",
+    "step3_title": "Entwickeln",
+    "step3_desc": "Technische Zeichnungen, Schnittmuster, Prototyprunden. Wir iterieren, bis jedes Detail stimmt.",
+    "step4_title": "Liefern",
+    "step4_desc": "Produktionsfertige Dateien, Fabrikkoordination, Qualitätskontrolle. Ihre Schuhe — richtig gemacht, pünktlich."
+  },
+  "philosophy": {
+    "label": "Unsere Philosophie",
+    "title": "Regeln brechen.\nDann neue setzen.",
+    "description": "Großartige Schuhe entschuldigen sich nicht. Sie stellen Konventionen in Frage, trotzen Erwartungen und verdienen ihren Platz in Garderoben auf der ganzen Welt. Das ist der Maßstab, an dem wir uns messen — bei jedem einzelnen Projekt."
+  },
+  "contact": {
+    "label": "Kontakt aufnehmen",
+    "title": "Lass uns etwas\nBoldes schaffen",
+    "description": "Bereit, Ihre Schuhvision zum Leben zu erwecken? Wir freuen uns, von Ihrem Projekt zu hören.",
+    "name_placeholder": "Ihr Name",
+    "email_placeholder": "Ihre E-Mail",
+    "message_placeholder": "Erzählen Sie uns von Ihrem Projekt...",
+    "send": "Nachricht senden",
+    "or": "Oder kontaktieren Sie uns direkt unter",
+    "success": "Nachricht gesendet! Wir melden uns bald."
+  },
+  "footer": {
+    "tagline": "Wir kreieren Schuhe und Accessoires für die Verbraucher der Welt.",
+    "rights": "Alle Rechte vorbehalten."
+  }
+}

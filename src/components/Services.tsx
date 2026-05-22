@@ -1,0 +1,54 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
+const icons = ["01", "02", "03", "04", "05", "06"];
+
+export default function Services() {
+  const t = useTranslations("services");
+
+  const items = [
+    { num: "01", title: t("item1_title"), desc: t("item1_desc") },
+    { num: "02", title: t("item2_title"), desc: t("item2_desc") },
+    { num: "03", title: t("item3_title"), desc: t("item3_desc") },
+    { num: "04", title: t("item4_title"), desc: t("item4_desc") },
+    { num: "05", title: t("item5_title"), desc: t("item5_desc") },
+    { num: "06", title: t("item6_title"), desc: t("item6_desc") },
+  ];
+
+  return (
+    <section id="services" className="bg-[#111] py-24 lg:py-36 px-6">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-20 gap-8">
+          <div>
+            <p className="text-white/40 text-xs tracking-[0.4em] uppercase mb-6">
+              {t("label")}
+            </p>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.05] uppercase whitespace-pre-line">
+              {t("title")}
+            </h2>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border-t border-white/10">
+          {items.map((item, i) => (
+            <div
+              key={item.num}
+              className={`group p-8 lg:p-10 border-b border-white/10 hover:bg-white/[0.03] transition-colors duration-300 ${
+                i % 3 !== 2 ? "lg:border-r" : ""
+              } ${i % 2 !== 1 ? "md:border-r lg:border-r-0" : "md:border-r-0"} ${
+                i % 3 !== 2 ? "lg:border-r" : ""
+              }`}
+            >
+              <p className="text-white/20 text-xs tracking-widest mb-6 font-mono">{item.num}</p>
+              <h3 className="text-white text-xl font-semibold mb-4 uppercase tracking-wide">
+                {item.title}
+              </h3>
+              <p className="text-white/40 text-sm leading-relaxed">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

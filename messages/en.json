@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "work": "Work",
+    "process": "Process",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "We create shoes and accessories for the consumers of the world",
+    "cta": "Explore Our Work",
+    "scroll": "Scroll to discover"
+  },
+  "about": {
+    "label": "About Us",
+    "title": "Design is our obsession,\ncraft is our language",
+    "description": "Unfold Creative is a full-service footwear design and development studio. We bridge the gap between bold creative vision and industrial production — translating concepts into shoes and accessories that move markets.",
+    "quote": "We don't follow trends. We start them.",
+    "stat1_value": "15+",
+    "stat1_label": "Years of Experience",
+    "stat2_value": "200+",
+    "stat2_label": "Projects Delivered",
+    "stat3_value": "50+",
+    "stat3_label": "Global Brands"
+  },
+  "services": {
+    "label": "What We Do",
+    "title": "Full-spectrum footwear\ndesign services",
+    "item1_title": "Concept & Design",
+    "item1_desc": "From initial brief to final sketch — we develop footwear concepts that push creative boundaries while staying commercially viable.",
+    "item2_title": "Prototype Development",
+    "item2_desc": "Hands-on prototype creation with access to top-tier factories and material suppliers across Europe and Asia.",
+    "item3_title": "Brand Identity",
+    "item3_desc": "We craft the visual language and brand narrative that makes your footwear line instantly recognizable.",
+    "item4_title": "Trend Research",
+    "item4_desc": "Deep-dive trend forecasting tailored to the footwear and accessories market — season ahead, always.",
+    "item5_title": "Production Consulting",
+    "item5_desc": "End-to-end support from pattern making to mass production, ensuring quality at every step.",
+    "item6_title": "AI & Digital Design",
+    "item6_desc": "Cutting-edge generative design tools combined with traditional craftsmanship for the future of footwear."
+  },
+  "work": {
+    "label": "Selected Work",
+    "title": "Projects that\nbreak the mold",
+    "view_all": "View All Projects"
+  },
+  "process": {
+    "label": "Our Process",
+    "title": "From sketch\nto shelf",
+    "step1_title": "Discover",
+    "step1_desc": "We immerse ourselves in your brand world — understanding your customer, your market, and your ambition.",
+    "step2_title": "Design",
+    "step2_desc": "Sketches, mood boards, material selection. We explore every creative direction before zeroing in on the one.",
+    "step3_title": "Develop",
+    "step3_desc": "Technical drawings, pattern making, prototype rounds. We iterate until every detail is exactly right.",
+    "step4_title": "Deliver",
+    "step4_desc": "Production-ready files, factory liaison, quality control. Your shoes, made right, on time."
+  },
+  "philosophy": {
+    "label": "Our Philosophy",
+    "title": "Break the rules.\nThen make new ones.",
+    "description": "Great footwear doesn't apologize. It challenges convention, defies expectations, and earns its place in wardrobes across the world. That's the standard we hold ourselves to — every single project."
+  },
+  "contact": {
+    "label": "Get In Touch",
+    "title": "Let's create\nsomething bold",
+    "description": "Ready to bring your footwear vision to life? We'd love to hear about your project.",
+    "name_placeholder": "Your Name",
+    "email_placeholder": "Your Email",
+    "message_placeholder": "Tell us about your project...",
+    "send": "Send Message",
+    "or": "Or reach us directly at",
+    "success": "Message sent! We'll be in touch soon."
+  },
+  "footer": {
+    "tagline": "Creating shoes and accessories for the consumers of the world.",
+    "rights": "All rights reserved."
+  }
+}
