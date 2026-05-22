@@ -1,79 +1,89 @@
 {
   "nav": {
     "about": "Über uns",
-    "services": "Leistungen",
-    "work": "Projekte",
-    "process": "Prozess",
-    "contact": "Kontakt"
+    "departments": "Abteilungen",
+    "innovation": "Innovation Hub",
+    "contact": "Kontakt",
+    "menu": "Menü"
   },
   "hero": {
-    "tagline": "Wir kreieren Schuhe und Accessoires für die Verbraucher der Welt",
-    "cta": "Unsere Arbeit entdecken",
-    "scroll": "Scrollen zum Entdecken"
+    "banner": "WIR GESTALTEN SCHUHE UND ACCESSOIRES FÜR DIE VERBRAUCHER DER WELT!"
   },
   "about": {
-    "label": "Über uns",
-    "title": "Design ist unsere Obsession,\nHandwerk ist unsere Sprache",
-    "description": "Unfold Creative ist ein Full-Service-Studio für Schuhdesign und -entwicklung. Wir überbrücken die Lücke zwischen kühner kreativer Vision und industrieller Produktion — wir übersetzen Konzepte in Schuhe und Accessoires, die Märkte bewegen.",
-    "quote": "Wir folgen keinen Trends. Wir setzen sie.",
-    "stat1_value": "15+",
-    "stat1_label": "Jahre Erfahrung",
-    "stat2_value": "200+",
-    "stat2_label": "Abgeschlossene Projekte",
-    "stat3_value": "50+",
-    "stat3_label": "Globale Marken"
+    "heading": "ÜBER UNS",
+    "body": "UnfoldCreative ist ein Ort, an dem Vorstellungskraft Schuhen Leben einhaucht, wo Ideen sich entfalten und die Trends von morgen Wurzeln schlagen. Hier trifft der Geist des Made in Europe auf einen globalen Blick und schafft Stücke, die verfeinert, modern und mühelos authentisch wirken."
   },
-  "services": {
-    "label": "Was wir tun",
-    "title": "Ganzheitliche Schuhdesign-\nDienstleistungen",
-    "item1_title": "Konzept & Design",
-    "item1_desc": "Vom ersten Briefing bis zur finalen Skizze — wir entwickeln Schuhkonzepte, die kreative Grenzen sprengen und dabei kommerziell tragfähig bleiben.",
-    "item2_title": "Prototypenentwicklung",
-    "item2_desc": "Praxisnahe Prototypenerstellung mit Zugang zu erstklassigen Fabriken und Materiallieferanten in Europa und Asien.",
-    "item3_title": "Markenidentität",
-    "item3_desc": "Wir gestalten die visuelle Sprache und Markenerzählung, die Ihre Schuhkollektion sofort erkennbar macht.",
-    "item4_title": "Trendforschung",
-    "item4_desc": "Tiefgehende Trendprognosen speziell für den Schuh- und Accessoires-Markt — immer eine Saison voraus.",
-    "item5_title": "Produktionsberatung",
-    "item5_desc": "Umfassende Unterstützung vom Schnittmuster bis zur Massenproduktion — Qualität auf jedem Schritt gesichert.",
-    "item6_title": "KI & Digitales Design",
-    "item6_desc": "Modernste generative Designwerkzeuge kombiniert mit traditionellem Handwerk für die Zukunft des Schuhdesigns."
+  "mission": {
+    "heading": "MISSION",
+    "body": "Wir erschaffen Schuhe, die Kultur, Handel und Design in Einklang bringen. Von kommerziellen bis hin zu Premium-Marken entwickeln wir Kollektionen mit klarer Handschrift und Marktrelevanz. Verwurzelt im Handwerk helfen wir Marken, stärkere Produkte und tiefere Verbindungen zu ihren Kunden aufzubauen.",
+    "body_html": "Wir erschaffen Schuhe, die Kultur, Handel und Design in Einklang bringen. Von <strong>kommerziellen</strong> bis hin zu <strong>Premium</strong>-Marken entwickeln wir Kollektionen mit klarer Handschrift und Marktrelevanz. Verwurzelt im <strong>Handwerk</strong> helfen wir Marken, stärkere Produkte und tiefere Verbindungen zu ihren Kunden aufzubauen."
   },
-  "work": {
-    "label": "Ausgewählte Projekte",
-    "title": "Projekte, die\nMaßstäbe setzen",
-    "view_all": "Alle Projekte ansehen"
+  "team": {
+    "role1": "Geschäftsführer",
+    "role2": "Designer",
+    "role3": "Innovation Lab / Grafik",
+    "role4": "Designer"
   },
-  "process": {
-    "label": "Unser Prozess",
-    "title": "Von der Skizze\nzum Regal",
-    "step1_title": "Entdecken",
-    "step1_desc": "Wir tauchen in Ihre Markenwelt ein — und verstehen Ihren Kunden, Ihren Markt und Ihren Ehrgeiz.",
-    "step2_title": "Gestalten",
-    "step2_desc": "Skizzen, Moodboards, Materialauswahl. Wir erkunden jede kreative Richtung, bevor wir die richtige finden.",
-    "step3_title": "Entwickeln",
-    "step3_desc": "Technische Zeichnungen, Schnittmuster, Prototyprunden. Wir iterieren, bis jedes Detail stimmt.",
-    "step4_title": "Liefern",
-    "step4_desc": "Produktionsfertige Dateien, Fabrikkoordination, Qualitätskontrolle. Ihre Schuhe — richtig gemacht, pünktlich."
+  "departments": {
+    "heading": "ABTEILUNGEN",
+    "intro": "Wir begleiten Produkte von der ersten Idee bis zum fertigen Prototyp – und verbinden Konzeptdesign, Materialbeschaffung, Produktentwicklung und Prototyping in einem nahtlosen Prozess.",
+    "intro_html": "Wir begleiten Produkte von der ersten Idee bis zum fertigen Prototyp – und verbinden Konzept-<strong>design</strong>, Material-<strong>beschaffung</strong>, Produkt-<strong>entwicklung</strong> und <strong>Prototyping</strong> in einem nahtlosen Prozess.",
+    "trend": {
+      "heading": "TRENDFORSCHUNG",
+      "body": "Unsere Trend- und Strategieabteilung verfolgt Veränderungen in Kultur, Konsumverhalten und Markt, um Produkte mit nachhaltigem Wert zu gestalten. Durch Trendprognosen, Wettbewerbsanalysen und strategische Positionierung verwandeln wir Erkenntnisse in klare Richtungsvorgaben und stärkere Produktentscheidungen."
+    },
+    "design": {
+      "heading": "DESIGN / STIL",
+      "body": "Unsere Designer verwandeln Ideen in Formen mit Haltung. Von ersten Konzepten und saisonaler Ausrichtung bis hin zu Skizzen, Renderings und Kollektionsaufbau erschaffen sie Produkte, die Kultur, Funktion und einen starken Standpunkt vereinen.",
+      "body_html": "Unsere Designer verwandeln Ideen in Formen mit Haltung. Von ersten Konzepten und saisonaler Ausrichtung bis hin zu <strong>Skizzen</strong>, <strong>Renderings</strong> und <strong>Kollektionsaufbau</strong> erschaffen sie Produkte, die Kultur, Funktion und einen starken Standpunkt vereinen."
+    },
+    "sourcing": {
+      "heading": "EINKAUF",
+      "body": "Unser Materialarchiv ist ständig in Bewegung – saisonal aktualisiert mit neuen Ledern, Textilien, Farben und Komponenten aus der gesamten Branche."
+    },
+    "laboratory": {
+      "heading": "LABOR",
+      "body": "Hinter jedem Produkt steckt ein Entwicklungsprozess, der von Präzision, technischem Denken und Liebe zum Detail geprägt ist – von Leisten- und Formenentwicklung über Prototypenbau und technische Spezifikationen bis hin zu digitalen Werkzeugen.",
+      "body_html": "Hinter jedem Produkt steckt ein Entwicklungsprozess, der von Präzision, technischem Denken und Liebe zum Detail geprägt ist – von <strong>Leisten</strong>- und <strong>Formenentwicklung</strong> über <strong>Prototypenbau</strong> und <strong>technische Spezifikationen</strong> bis hin zu <strong>digitalen Werkzeugen</strong>."
+    },
+    "graphics": {
+      "heading": "GRAFIK",
+      "body": "Unsere Grafikdesign-Abteilung gestaltet die Details, die einer Marke ihre Identität geben – von Logos und Verpackungen über Laufsohlen-Grafiken und Prints bis hin zu Präsentationen, die konsistent, durchdacht und produktnah wirken.",
+      "body_html": "Unsere Grafikdesign-Abteilung gestaltet die Details, die einer Marke ihre Identität geben – von Logos und Verpackungen über Laufsohlen-<strong>Grafiken</strong> und <strong>Prints</strong> bis hin zu Präsentationen, die konsistent, durchdacht und produktnah wirken."
+    }
   },
-  "philosophy": {
-    "label": "Unsere Philosophie",
-    "title": "Regeln brechen.\nDann neue setzen.",
-    "description": "Großartige Schuhe entschuldigen sich nicht. Sie stellen Konventionen in Frage, trotzen Erwartungen und verdienen ihren Platz in Garderoben auf der ganzen Welt. Das ist der Maßstab, an dem wir uns messen — bei jedem einzelnen Projekt."
+  "innovation": {
+    "heading": "INNOVATION / TECH HUB",
+    "intro": "Unsere Abteilung für Innovation und technische Entwicklung verwandelt Konzepte in produktionsreife Produkte – durch eine Kombination aus digitalem Design und technischer Kompetenz. Von 3D-Modellierung, Prototyping und Rendering bis hin zu Tech-Packs, Konstruktionsspezifikationen, Anpassungstests und Fabrikkoordination begleiten wir den gesamten Entwicklungsprozess vom Konzept bis zur Produktion.",
+    "intro_html": "Unsere Abteilung für Innovation und technische Entwicklung verwandelt Konzepte in produktionsreife Produkte – durch eine Kombination aus digitalem Design und technischer Kompetenz. Von <strong>3D-Modellierung</strong>, Prototyping und Rendering bis hin zu Tech-Packs, Konstruktionsspezifikationen, Anpassungstests und Fabrikkoordination begleiten wir den gesamten Entwicklungsprozess vom Konzept bis zur Produktion.",
+    "pillar1": "Design",
+    "pillar2": "Kreativität",
+    "pillar3": "Technologie",
+    "pillar4": "Innovation"
   },
   "contact": {
-    "label": "Kontakt aufnehmen",
-    "title": "Lass uns etwas\nBoldes schaffen",
-    "description": "Bereit, Ihre Schuhvision zum Leben zu erwecken? Wir freuen uns, von Ihrem Projekt zu hören.",
-    "name_placeholder": "Ihr Name",
-    "email_placeholder": "Ihre E-Mail",
-    "message_placeholder": "Erzählen Sie uns von Ihrem Projekt...",
-    "send": "Nachricht senden",
-    "or": "Oder kontaktieren Sie uns direkt unter",
-    "success": "Nachricht gesendet! Wir melden uns bald."
+    "heading": "Lass uns zusammenarbeiten",
+    "company": "UnfoldCreative S.R.L.",
+    "address1": "Ioan Corneli Nr. 2.",
+    "address2": "410609 Oradea RO.",
+    "email": "info@unfoldcreative.com",
+    "phone1": "+40 778 788 571",
+    "phone2": "+49 171 44 34 179",
+    "name": "Name",
+    "surname": "Nachname",
+    "firm": "Firma",
+    "email_label": "E-Mail",
+    "message": "Nachricht",
+    "privacy": "Ich habe die Datenschutzrichtlinie gelesen und akzeptiert",
+    "send": "SENDEN"
   },
   "footer": {
-    "tagline": "Wir kreieren Schuhe und Accessoires für die Verbraucher der Welt.",
-    "rights": "Alle Rechte vorbehalten."
+    "homepage": "Startseite",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "innovation": "Innovation Hub",
+    "departments": "Abteilungen",
+    "instagram": "Instagram",
+    "logo": "UNFOLDCREATIVE Footwear Design"
   }
 }

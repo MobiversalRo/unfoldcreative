@@ -4,74 +4,70 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export default function About() {
-  const t = useTranslations("about");
-
-  const stats = [
-    { value: t("stat1_value"), label: t("stat1_label") },
-    { value: t("stat2_value"), label: t("stat2_label") },
-    { value: t("stat3_value"), label: t("stat3_label") },
-  ];
+  const tAbout = useTranslations("about");
+  const tMission = useTranslations("mission");
 
   return (
-    <section id="about" className="bg-[#0a0a0a] py-24 lg:py-36 px-6">
-      <div className="max-w-7xl mx-auto">
-        <p className="text-white/40 text-xs tracking-[0.4em] uppercase mb-16">
-          {t("label")}
-        </p>
+    <>
+      {/* ABOUT US */}
+      <section id="about" className="bg-white text-black py-20 lg:py-32 px-6">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold uppercase underline underline-offset-4 mb-14">
+            {tAbout("heading")}
+          </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-          {/* Text */}
-          <div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.05] uppercase whitespace-pre-line mb-8">
-              {t("title")}
-            </h2>
-            <p className="text-white/50 text-base leading-relaxed mb-10">
-              {t("description")}
-            </p>
-            <blockquote className="border-l-2 border-white/30 pl-6">
-              <p className="text-white text-xl italic font-light">&ldquo;{t("quote")}&rdquo;</p>
-            </blockquote>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+            {/* Left: image */}
+            <div className="relative w-full aspect-[4/3]">
+              <Image
+                src="/images/sewing-bw.png"
+                alt="Sewing workshop"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-8 mt-14 pt-10 border-t border-white/10">
-              {stats.map((stat) => (
-                <div key={stat.label}>
-                  <p className="text-white text-3xl md:text-4xl font-bold mb-1">{stat.value}</p>
-                  <p className="text-white/40 text-xs tracking-widest uppercase">{stat.label}</p>
-                </div>
-              ))}
+            {/* Right: text */}
+            <div className="flex items-center">
+              <p className="text-lg leading-relaxed text-black/80">
+                {tAbout("body")}
+              </p>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Images */}
-          <div className="grid grid-cols-2 gap-4">
-            <div className="relative h-80 col-span-2">
-              <Image
-                src="/images/designer-portrait.jpeg"
-                alt="Unfold Creative designer"
-                fill
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
-              />
+      {/* MISSION */}
+      <section className="bg-white text-black py-20 lg:py-28 px-6 border-t border-black/10">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold uppercase underline underline-offset-4 mb-14">
+            {tMission("heading")}
+          </h2>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+            {/* Left: text */}
+            <div className="flex items-center">
+              <p className="text-lg leading-relaxed text-black/80">
+                {tMission.rich("body_html", {
+                  strong: (chunks) => <strong>{chunks}</strong>,
+                })}
+              </p>
             </div>
-            <div className="relative h-48">
+
+            {/* Right: image */}
+            <div className="relative w-full aspect-[4/3]">
               <Image
-                src="/images/fashion-illustration.jpeg"
-                alt="Fashion illustration"
+                src="/images/love-shoe-bw.jpg"
+                alt="Love script heel shoe"
                 fill
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
-              />
-            </div>
-            <div className="relative h-48">
-              <Image
-                src="/images/designer-sketch.png"
-                alt="Designer at work"
-                fill
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

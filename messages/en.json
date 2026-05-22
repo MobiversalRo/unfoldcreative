@@ -1,79 +1,89 @@
 {
   "nav": {
-    "about": "About",
-    "services": "Services",
-    "work": "Work",
-    "process": "Process",
-    "contact": "Contact"
+    "about": "About Us",
+    "departments": "Departments",
+    "innovation": "Innovation Hub",
+    "contact": "Contact Us",
+    "menu": "Menü"
   },
   "hero": {
-    "tagline": "We create shoes and accessories for the consumers of the world",
-    "cta": "Explore Our Work",
-    "scroll": "Scroll to discover"
+    "banner": "WE CREATE SHOES AND ACCESSORIES FOR THE CONSUMERS OF THE WORLD!"
   },
   "about": {
-    "label": "About Us",
-    "title": "Design is our obsession,\ncraft is our language",
-    "description": "Unfold Creative is a full-service footwear design and development studio. We bridge the gap between bold creative vision and industrial production — translating concepts into shoes and accessories that move markets.",
-    "quote": "We don't follow trends. We start them.",
-    "stat1_value": "15+",
-    "stat1_label": "Years of Experience",
-    "stat2_value": "200+",
-    "stat2_label": "Projects Delivered",
-    "stat3_value": "50+",
-    "stat3_label": "Global Brands"
+    "heading": "ABOUT US",
+    "body": "UnfoldCreative is a hub where imagination breathes life into footwear, where ideas unfold gently and tomorrow's trends take root. Within these walls, the spirit of made in Europe meets a global eye, creating pieces that feel refined, modern, and effortlessly authentic."
   },
-  "services": {
-    "label": "What We Do",
-    "title": "Full-spectrum footwear\ndesign services",
-    "item1_title": "Concept & Design",
-    "item1_desc": "From initial brief to final sketch — we develop footwear concepts that push creative boundaries while staying commercially viable.",
-    "item2_title": "Prototype Development",
-    "item2_desc": "Hands-on prototype creation with access to top-tier factories and material suppliers across Europe and Asia.",
-    "item3_title": "Brand Identity",
-    "item3_desc": "We craft the visual language and brand narrative that makes your footwear line instantly recognizable.",
-    "item4_title": "Trend Research",
-    "item4_desc": "Deep-dive trend forecasting tailored to the footwear and accessories market — season ahead, always.",
-    "item5_title": "Production Consulting",
-    "item5_desc": "End-to-end support from pattern making to mass production, ensuring quality at every step.",
-    "item6_title": "AI & Digital Design",
-    "item6_desc": "Cutting-edge generative design tools combined with traditional craftsmanship for the future of footwear."
+  "mission": {
+    "heading": "MISSION",
+    "body": "We create shoes that balances culture, commerce, and design. From commercial to premium brands, we develop collections with a strong point of view and clear market relevance. Rooted in craftsmanship, our work helps brands build stronger products and more meaningful consumer connections.",
+    "body_html": "We create shoes that balances culture, commerce, and design. From <strong>commercial</strong> to <strong>premium</strong> brands, we develop collections with a strong point of view and clear market relevance. Rooted in <strong>craftsmanship</strong>, our work helps brands build stronger products and more meaningful consumer connections."
   },
-  "work": {
-    "label": "Selected Work",
-    "title": "Projects that\nbreak the mold",
-    "view_all": "View All Projects"
+  "team": {
+    "role1": "Managing Director",
+    "role2": "Designer",
+    "role3": "Innovation Lab / Graphics",
+    "role4": "Designer"
   },
-  "process": {
-    "label": "Our Process",
-    "title": "From sketch\nto shelf",
-    "step1_title": "Discover",
-    "step1_desc": "We immerse ourselves in your brand world — understanding your customer, your market, and your ambition.",
-    "step2_title": "Design",
-    "step2_desc": "Sketches, mood boards, material selection. We explore every creative direction before zeroing in on the one.",
-    "step3_title": "Develop",
-    "step3_desc": "Technical drawings, pattern making, prototype rounds. We iterate until every detail is exactly right.",
-    "step4_title": "Deliver",
-    "step4_desc": "Production-ready files, factory liaison, quality control. Your shoes, made right, on time."
+  "departments": {
+    "heading": "DEPARTMENTS",
+    "intro": "We guide products from first idea to final prototype — combining concept design, material sourcing, product development, and prototyping into one seamless process.",
+    "intro_html": "We guide products from first idea to final prototype — combining concept <strong>design</strong>, material <strong>sourcing</strong>, product <strong>development</strong>, and <strong>prototyping</strong> into one seamless process.",
+    "trend": {
+      "heading": "TRENDRESEARCH",
+      "body": "Our Trend & Strategy division tracks shifts in culture, consumer behaviour, and the market to help shape products with lasting value. Through forecasting, competitor analysis, and strategic positioning, we turn insight into clear direction and stronger product decisions."
+    },
+    "design": {
+      "heading": "DESIGN / STYLE",
+      "body": "Our designers turn ideas into shapes with attitude. From early concepts and seasonal direction to sketching, rendering, and collection building, they create products that balance culture, function, with a strong point of view.",
+      "body_html": "Our designers turn ideas into shapes with attitude. From early concepts and seasonal direction to <strong>sketching</strong>, <strong>rendering</strong>, and <strong>collection building</strong>, they create products that balance culture, function, with a strong point of view."
+    },
+    "sourcing": {
+      "heading": "SOURCING",
+      "body": "Our material archive is in constant motion — updated seasonally with new leathers, textiles, colours, and components sourced from across the industry."
+    },
+    "laboratory": {
+      "heading": "LABORATORY",
+      "body": "Behind every product is a development process shaped by precision, technical thinking, and attention to detail — combining last and mold development, prototype building, technical specifications, and digital tools to turn ideas into functional products ready for production.",
+      "body_html": "Behind every product is a development process shaped by precision, technical thinking, and attention to detail — combining <strong>last</strong> and <strong>mold</strong> development, <strong>prototype</strong> building, <strong>technical specifications</strong>, and <strong>digital tools</strong> to turn ideas into functional products ready for production."
+    },
+    "graphics": {
+      "heading": "GRAPHICS",
+      "body": "Our Graphic Design division shapes the details that give a brand its identity — creating logos, packaging, outsole graphics, apparel prints, and presentations that feel consistent, considered, and connected to the product.",
+      "body_html": "Our Graphic Design division shapes the details that give a brand its identity — creating logos, packaging, outsole <strong>graphics</strong>, apparel <strong>prints</strong>, and presentations that feel consistent, considered, and connected to the product."
+    }
   },
-  "philosophy": {
-    "label": "Our Philosophy",
-    "title": "Break the rules.\nThen make new ones.",
-    "description": "Great footwear doesn't apologize. It challenges convention, defies expectations, and earns its place in wardrobes across the world. That's the standard we hold ourselves to — every single project."
+  "innovation": {
+    "heading": "INNOVATION / TECH HUB",
+    "intro": "Our Innovation and Technical Development division turns concepts into production-ready products through a combination of digital design and technical expertise. From 3D modeling, prototyping, and rendering to tech packs, construction specs, fit testing, and factory coordination, we support the full development process from concept to production.",
+    "intro_html": "Our Innovation and Technical Development division turns concepts into production-ready products through a combination of digital design and technical expertise. From <strong>3D modeling</strong>, prototyping, and rendering to tech packs, construction specs, fit testing, and factory coordination, we support the full development process from concept to production.",
+    "pillar1": "Design",
+    "pillar2": "Creativity",
+    "pillar3": "Technology",
+    "pillar4": "Innovation"
   },
   "contact": {
-    "label": "Get In Touch",
-    "title": "Let's create\nsomething bold",
-    "description": "Ready to bring your footwear vision to life? We'd love to hear about your project.",
-    "name_placeholder": "Your Name",
-    "email_placeholder": "Your Email",
-    "message_placeholder": "Tell us about your project...",
-    "send": "Send Message",
-    "or": "Or reach us directly at",
-    "success": "Message sent! We'll be in touch soon."
+    "heading": "Let's work together",
+    "company": "UnfoldCreative S.R.L.",
+    "address1": "Ioan Corneli Nr. 2.",
+    "address2": "410609 Oradea RO.",
+    "email": "info@unfoldcreative.com",
+    "phone1": "+40 778 788 571",
+    "phone2": "+49 171 44 34 179",
+    "name": "Name",
+    "surname": "Surname",
+    "firm": "Firm",
+    "email_label": "Email",
+    "message": "Message",
+    "privacy": "I read and accepted the privacy policy",
+    "send": "SEND"
   },
   "footer": {
-    "tagline": "Creating shoes and accessories for the consumers of the world.",
-    "rights": "All rights reserved."
+    "homepage": "Homepage",
+    "about": "About us",
+    "contact": "Contact us",
+    "innovation": "Innovation hub",
+    "departments": "Departments",
+    "instagram": "Instagram",
+    "logo": "UNFOLDCREATIVE Footwear Design"
   }
 }

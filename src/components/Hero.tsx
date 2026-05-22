@@ -4,27 +4,46 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import LazyVideo from "./LazyVideo";
 
+const COORDINATES = [
+  { text: "27° 18' N / 78° 01' O", top: "12%", left: "5%" },
+  { text: "41° 53' N / 12° 28' O", top: "20%", left: "60%" },
+  { text: "38° 15' N / 0° 41' W", top: "35%", left: "15%" },
+  { text: "49° 12' N / 07° 36' O", top: "50%", left: "72%" },
+  { text: "41° 09' N / 8° 37' W", top: "65%", left: "8%" },
+  { text: "23° 2' N / 113° 43' O", top: "75%", left: "50%" },
+  { text: "47° 02' N / 21° 55' O", top: "42%", left: "38%" },
+];
+
 export default function Hero() {
   const t = useTranslations("hero");
 
-  const marqueeText = "SHOES · ACCESSORIES · DESIGN · FOOTWEAR · CRAFT · INNOVATION · ";
-
   return (
-    <section className="relative min-h-screen flex flex-col overflow-hidden bg-[#0a0a0a]">
+    <section className="relative min-h-screen flex flex-col overflow-hidden bg-[#111]">
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/design-workspace.png"
           alt="Design workspace"
           fill
-          className="object-cover opacity-20"
+          className="object-cover opacity-15"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/60 via-[#0a0a0a]/40 to-[#0a0a0a]" />
+        <div className="absolute inset-0 bg-[#111]/60" />
       </div>
 
-      {/* Floating data-viz video — top right */}
-      <div className="absolute top-16 right-0 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 z-10 opacity-60 mix-blend-screen pointer-events-none">
+      {/* World coordinates scattered as text */}
+      {COORDINATES.map((coord, i) => (
+        <span
+          key={i}
+          className="absolute text-white/25 text-xs tracking-widest font-mono z-10 pointer-events-none select-none"
+          style={{ top: coord.top, left: coord.left }}
+        >
+          {coord.text}
+        </span>
+      ))}
+
+      {/* Floating data-viz video */}
+      <div className="absolute top-20 right-0 w-56 h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 z-10 opacity-50 mix-blend-screen pointer-events-none">
         <LazyVideo
           src="/videos/data-viz.mp4"
           poster="/images/poster-data-viz.png"
@@ -32,64 +51,15 @@ export default function Hero() {
         />
       </div>
 
-      {/* Main hero content */}
-      <div className="relative z-10 flex-1 flex flex-col justify-center px-6 max-w-7xl mx-auto w-full pt-32 pb-16">
-        <div className="flex flex-col lg:flex-row items-start lg:items-end gap-12 lg:gap-20">
-          <div className="flex-1">
-            <p className="text-white/40 text-xs tracking-[0.4em] uppercase mb-8">
-              Est. 2010 · Footwear Design Studio
-            </p>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-[0.9] tracking-tight uppercase">
-              {t("tagline").split(" ").slice(0, 4).join(" ")}{" "}
-              <span className="text-white/30 italic font-light normal-case">
-                {t("tagline").split(" ").slice(4).join(" ")}
-              </span>
-            </h1>
-            <div className="mt-12">
-              <a
-                href="#work"
-                className="inline-block border border-white text-white px-8 py-4 text-xs tracking-[0.3em] uppercase hover:bg-white hover:text-black transition-all duration-300"
-              >
-                {t("cta")}
-              </a>
-            </div>
-          </div>
+      {/* Spacer for full-screen feel */}
+      <div className="relative z-10 flex-1" />
 
-          <div className="relative w-full lg:w-80 xl:w-96 h-[400px] lg:h-[500px] shrink-0">
-            <Image
-              src="/images/hero-sneaker.jpeg"
-              alt="Featured footwear design"
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
-        </div>
+      {/* Bottom banner */}
+      <div className="relative z-10 w-full bg-black py-5 px-6">
+        <p className="text-white font-bold text-sm md:text-base lg:text-lg tracking-[0.15em] uppercase text-center">
+          {t("banner")}
+        </p>
       </div>
-
-      {/* Scrolling marquee */}
-      <div className="relative z-10 border-t border-white/10 py-4 overflow-hidden">
-        <div
-          className="flex whitespace-nowrap"
-          style={{ animation: "marquee 20s linear infinite" }}
-        >
-          {[...Array(4)].map((_, i) => (
-            <span
-              key={i}
-              className="text-white/20 text-xs tracking-[0.4em] uppercase mx-8 shrink-0"
-            >
-              {marqueeText}
-            </span>
-          ))}
-        </div>
-      </div>
-
-      <style>{`
-        @keyframes marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-      `}</style>
     </section>
   );
 }
