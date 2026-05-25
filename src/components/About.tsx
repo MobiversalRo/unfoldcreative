@@ -12,26 +12,29 @@ export default function About() {
       {/* ABOUT US */}
       <section id="about" className="bg-white text-black py-20 lg:py-32 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold uppercase underline underline-offset-4 mb-14">
-            {tAbout("heading")}
-          </h2>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-            {/* Left: image */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            {/* Left: blurry B&W image */}
             <div className="relative w-full aspect-[4/3]">
               <Image
-                src="/images/sewing-bw.png"
-                alt="Sewing workshop"
+                src="/images/about-bw.jpeg"
+                alt="Footwear craftsmanship"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
+                priority
               />
             </div>
 
-            {/* Right: text */}
-            <div className="flex items-center">
+            {/* Right: heading right-aligned, body centred */}
+            <div className="flex flex-col items-center text-center">
+              <h2 className="self-end text-3xl md:text-4xl font-bold uppercase underline underline-offset-4 mb-10">
+                {tAbout("heading")}
+              </h2>
+              <p className="text-lg leading-relaxed text-black/80 mb-6">
+                {tAbout.rich("body1_html", { strong: (c) => <strong>{c}</strong> })}
+              </p>
               <p className="text-lg leading-relaxed text-black/80">
-                {tAbout("body")}
+                {tAbout.rich("body2_html", { strong: (c) => <strong>{c}</strong> })}
               </p>
             </div>
           </div>
@@ -39,32 +42,45 @@ export default function About() {
       </section>
 
       {/* MISSION */}
-      <section className="bg-white text-black py-20 lg:py-28 px-6 border-t border-black/10">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold uppercase underline underline-offset-4 mb-14">
-            {tMission("heading")}
-          </h2>
+      <section className="bg-white text-black py-20 lg:py-32 border-t border-black/10">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 min-h-[520px]">
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-            {/* Left: text */}
-            <div className="flex items-center">
-              <p className="text-lg leading-relaxed text-black/80">
-                {tMission.rich("body_html", {
-                  strong: (chunks) => <strong>{chunks}</strong>,
-                })}
-              </p>
-            </div>
+          {/* Left: heading centred + two centred paragraphs */}
+          <div className="flex flex-col px-6 lg:px-16 py-10 lg:py-0 justify-center">
+            <h2 className="text-center text-3xl md:text-4xl font-bold uppercase underline underline-offset-4 mb-14">
+              {tMission("heading")}
+            </h2>
+            <p className="text-base leading-relaxed text-black/65 text-center mb-8">
+              {tMission.rich("body1_html", { strong: (c) => <strong>{c}</strong> })}
+            </p>
+            <p className="text-base leading-relaxed text-black/65 text-center">
+              {tMission.rich("body2_html", { strong: (c) => <strong>{c}</strong> })}
+            </p>
+          </div>
 
-            {/* Right: image */}
-            <div className="relative w-full aspect-[4/3]">
-              <Image
-                src="/images/love-shoe-bw.jpg"
-                alt="Love script heel shoe"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
-            </div>
+          {/* Right: gold divider + shoe hover effect (B&W → colour) */}
+          <div className="group relative flex items-center justify-center px-6 lg:px-16 py-10 lg:py-0">
+            {/* Colour image — always underneath */}
+            <Image
+              src="/images/love-shoe.png"
+              alt="Love script heel shoe"
+              width={520}
+              height={600}
+              className="object-contain max-h-[560px] w-auto relative z-0"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+
+            {/* B&W image — sits on top, fades away on hover */}
+            <Image
+              src="/images/love-shoe-bw.jpg"
+              alt=""
+              aria-hidden="true"
+              width={520}
+              height={600}
+              className="absolute inset-0 w-full h-full object-contain max-h-[560px] z-10
+                         opacity-100 group-hover:opacity-0 transition-opacity duration-500"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
           </div>
         </div>
       </section>

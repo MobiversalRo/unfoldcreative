@@ -11,12 +11,13 @@
   },
   "about": {
     "heading": "ÜBER UNS",
-    "body": "UnfoldCreative ist ein Ort, an dem Vorstellungskraft Schuhen Leben einhaucht, wo Ideen sich entfalten und die Trends von morgen Wurzeln schlagen. Hier trifft der Geist des Made in Europe auf einen globalen Blick und schafft Stücke, die verfeinert, modern und mühelos authentisch wirken."
+    "body1_html": "Unfold<strong>Creative</strong> ist ein Ort, an dem Vorstellungskraft Schuhen Leben einhaucht, wo Ideen sich entfalten und die Trends von morgen Wurzeln schlagen.",
+    "body2_html": "Hier trifft der Geist des Made in <strong>Europe</strong> auf einen globalen Blick und schafft Stücke, die verfeinert, modern und mühelos authentisch wirken."
   },
   "mission": {
     "heading": "MISSION",
-    "body": "Wir erschaffen Schuhe, die Kultur, Handel und Design in Einklang bringen. Von kommerziellen bis hin zu Premium-Marken entwickeln wir Kollektionen mit klarer Handschrift und Marktrelevanz. Verwurzelt im Handwerk helfen wir Marken, stärkere Produkte und tiefere Verbindungen zu ihren Kunden aufzubauen.",
-    "body_html": "Wir erschaffen Schuhe, die Kultur, Handel und Design in Einklang bringen. Von <strong>kommerziellen</strong> bis hin zu <strong>Premium</strong>-Marken entwickeln wir Kollektionen mit klarer Handschrift und Marktrelevanz. Verwurzelt im <strong>Handwerk</strong> helfen wir Marken, stärkere Produkte und tiefere Verbindungen zu ihren Kunden aufzubauen."
+    "body1_html": "Wir erschaffen Schuhe, die Kultur, Handel und Design in Einklang bringen. Von <strong>kommerziellen</strong> bis hin zu <strong>Premium</strong>-Marken entwickeln wir Kollektionen mit klarer Handschrift und Marktrelevanz.",
+    "body2_html": "Verwurzelt im <strong>Handwerk</strong> helfen wir Marken, stärkere Produkte und tiefere Verbindungen zu ihren Kunden aufzubauen."
   },
   "team": {
     "role1": "Geschäftsführer",
@@ -30,7 +31,8 @@
     "intro_html": "Wir begleiten Produkte von der ersten Idee bis zum fertigen Prototyp – und verbinden Konzept-<strong>design</strong>, Material-<strong>beschaffung</strong>, Produkt-<strong>entwicklung</strong> und <strong>Prototyping</strong> in einem nahtlosen Prozess.",
     "trend": {
       "heading": "TRENDFORSCHUNG",
-      "body": "Unsere Trend- und Strategieabteilung verfolgt Veränderungen in Kultur, Konsumverhalten und Markt, um Produkte mit nachhaltigem Wert zu gestalten. Durch Trendprognosen, Wettbewerbsanalysen und strategische Positionierung verwandeln wir Erkenntnisse in klare Richtungsvorgaben und stärkere Produktentscheidungen."
+      "body": "Unsere Trend- und Strategieabteilung verfolgt Veränderungen in Kultur, Konsumverhalten und Markt, um Produkte mit nachhaltigem Wert zu gestalten. Durch Trendprognosen, Wettbewerbsanalysen und strategische Positionierung verwandeln wir Erkenntnisse in klare Richtungsvorgaben und stärkere Produktentscheidungen.",
+      "body_html": "Unsere Trend- und Strategieabteilung verfolgt Veränderungen in Kultur, Konsumverhalten und Markt, um Produkte mit nachhaltigem Wert zu gestalten. Durch Trendprognosen, Wettbewerbs-<strong>analysen</strong> und <strong>strategische</strong> Positionierung verwandeln wir Erkenntnisse in klare Richtungsvorgaben und stärkere Produktentscheidungen."
     },
     "design": {
       "heading": "DESIGN / STIL",
@@ -39,7 +41,8 @@
     },
     "sourcing": {
       "heading": "EINKAUF",
-      "body": "Unser Materialarchiv ist ständig in Bewegung – saisonal aktualisiert mit neuen Ledern, Textilien, Farben und Komponenten aus der gesamten Branche."
+      "body": "Unser Materialarchiv ist ständig in Bewegung – saisonal aktualisiert mit neuen Ledern, Textilien, Farben und Komponenten aus der gesamten Branche.",
+      "body_html": "Unser Materialarchiv ist ständig in Bewegung – <strong>saisonal</strong> aktualisiert mit neuen Ledern, Textilien, Farben und Komponenten aus der gesamten <strong>Branche</strong>."
     },
     "laboratory": {
       "heading": "LABOR",
@@ -54,27 +57,25 @@
   },
   "innovation": {
     "heading": "INNOVATION / TECH HUB",
-    "intro": "Unsere Abteilung für Innovation und technische Entwicklung verwandelt Konzepte in produktionsreife Produkte – durch eine Kombination aus digitalem Design und technischer Kompetenz. Von 3D-Modellierung, Prototyping und Rendering bis hin zu Tech-Packs, Konstruktionsspezifikationen, Anpassungstests und Fabrikkoordination begleiten wir den gesamten Entwicklungsprozess vom Konzept bis zur Produktion.",
-    "intro_html": "Unsere Abteilung für Innovation und technische Entwicklung verwandelt Konzepte in produktionsreife Produkte – durch eine Kombination aus digitalem Design und technischer Kompetenz. Von <strong>3D-Modellierung</strong>, Prototyping und Rendering bis hin zu Tech-Packs, Konstruktionsspezifikationen, Anpassungstests und Fabrikkoordination begleiten wir den gesamten Entwicklungsprozess vom Konzept bis zur Produktion.",
+    "intro1_html": "Unsere Abteilung für <strong>Innovation</strong> und <strong>technische</strong> Entwicklung verwandelt Konzepte in produktionsreife Produkte – durch eine Kombination aus digitalem Design und technischer Kompetenz.",
+    "intro2_html": "Von <strong>3D-Modellierung,</strong> Prototyping und Rendering bis hin zu Tech-Packs, Konstruktionsspezifikationen, Anpassungstests und Fabrikkoordination <strong>begleiten</strong> wir den gesamten Entwicklungsprozess vom Konzept bis zur Produktion.",
     "pillar1": "Design",
     "pillar2": "Kreativität",
     "pillar3": "Technologie",
     "pillar4": "Innovation"
   },
   "contact": {
+    "teaser_heading": "Willst du mehr erfahren?",
+    "teaser_body1": "Sprich uns an – für Design, Entwicklung, Kollaborationen oder neue Ideen, die es wert sind, umgesetzt zu werden.",
+    "teaser_body2": "Wir sind immer auf der Suche nach ambitionierten Marken, frischen Perspektiven und spannenden Projekten.",
     "heading": "Lass uns zusammenarbeiten",
-    "company": "UnfoldCreative S.R.L.",
-    "address1": "Ioan Corneli Nr. 2.",
-    "address2": "410609 Oradea RO.",
-    "email": "info@unfoldcreative.com",
-    "phone1": "+40 778 788 571",
-    "phone2": "+49 171 44 34 179",
     "name": "Name",
     "surname": "Nachname",
     "firm": "Firma",
-    "email_label": "E-Mail",
+    "email": "E-Mail",
     "message": "Nachricht",
-    "privacy": "Ich habe die Datenschutzrichtlinie gelesen und akzeptiert",
+    "privacy": "Ich habe die",
+    "privacyLink": "Datenschutzerklärung",
     "send": "SENDEN"
   },
   "footer": {

@@ -1,11 +1,5 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Unfold Creative — Footwear Design Studio",
@@ -19,8 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className={geistSans.variable}>
-      <body>{children}</body>
+    <html>
+      <body suppressHydrationWarning>{children}</body>
     </html>
   );
 }

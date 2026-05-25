@@ -11,12 +11,13 @@
   },
   "about": {
     "heading": "ABOUT US",
-    "body": "UnfoldCreative is a hub where imagination breathes life into footwear, where ideas unfold gently and tomorrow's trends take root. Within these walls, the spirit of made in Europe meets a global eye, creating pieces that feel refined, modern, and effortlessly authentic."
+    "body1_html": "Unfold<strong>Creative</strong> is a hub where imagination breathes life into footwear, where ideas unfold gently and tomorrow's trends take root.",
+    "body2_html": "Within these walls, the spirit of made in <strong>Europe</strong> meets a global eye, creating pieces that feel refined, modern, and effortlessly authentic."
   },
   "mission": {
     "heading": "MISSION",
-    "body": "We create shoes that balances culture, commerce, and design. From commercial to premium brands, we develop collections with a strong point of view and clear market relevance. Rooted in craftsmanship, our work helps brands build stronger products and more meaningful consumer connections.",
-    "body_html": "We create shoes that balances culture, commerce, and design. From <strong>commercial</strong> to <strong>premium</strong> brands, we develop collections with a strong point of view and clear market relevance. Rooted in <strong>craftsmanship</strong>, our work helps brands build stronger products and more meaningful consumer connections."
+    "body1_html": "We create shoes that balances culture, commerce, and design. From <strong>commercial</strong> to <strong>premium</strong> brands, we develop collections with a strong point of view and clear market relevance.",
+    "body2_html": "Rooted in <strong>craftsmanship</strong>, our work helps brands build stronger products and more meaningful consumer connections."
   },
   "team": {
     "role1": "Managing Director",
@@ -30,7 +31,8 @@
     "intro_html": "We guide products from first idea to final prototype — combining concept <strong>design</strong>, material <strong>sourcing</strong>, product <strong>development</strong>, and <strong>prototyping</strong> into one seamless process.",
     "trend": {
       "heading": "TRENDRESEARCH",
-      "body": "Our Trend & Strategy division tracks shifts in culture, consumer behaviour, and the market to help shape products with lasting value. Through forecasting, competitor analysis, and strategic positioning, we turn insight into clear direction and stronger product decisions."
+      "body": "Our Trend & Strategy division tracks shifts in culture, consumer behaviour, and the market to help shape products with lasting value. Through forecasting, competitor analysis, and strategic positioning, we turn insight into clear direction and stronger product decisions.",
+      "body_html": "Our Trend & Strategy division tracks shifts in culture, consumer behaviour, and the market to help shape products with lasting value. Through forecasting, competitor <strong>analysis</strong>, and <strong>strategic</strong> positioning, we turn insight into clear direction and stronger product decisions."
     },
     "design": {
       "heading": "DESIGN / STYLE",
@@ -39,7 +41,8 @@
     },
     "sourcing": {
       "heading": "SOURCING",
-      "body": "Our material archive is in constant motion — updated seasonally with new leathers, textiles, colours, and components sourced from across the industry."
+      "body": "Our material archive is in constant motion — updated seasonally with new leathers, textiles, colours, and components sourced from across the industry.",
+      "body_html": "Our material archive is in constant motion — updated <strong>seasonally</strong> with new leathers, textiles, colours, and components sourced from across the <strong>industry</strong>."
     },
     "laboratory": {
       "heading": "LABORATORY",
@@ -54,27 +57,25 @@
   },
   "innovation": {
     "heading": "INNOVATION / TECH HUB",
-    "intro": "Our Innovation and Technical Development division turns concepts into production-ready products through a combination of digital design and technical expertise. From 3D modeling, prototyping, and rendering to tech packs, construction specs, fit testing, and factory coordination, we support the full development process from concept to production.",
-    "intro_html": "Our Innovation and Technical Development division turns concepts into production-ready products through a combination of digital design and technical expertise. From <strong>3D modeling</strong>, prototyping, and rendering to tech packs, construction specs, fit testing, and factory coordination, we support the full development process from concept to production.",
+    "intro1_html": "Our <strong>Innovation</strong> and <strong>Technical</strong> Development division turns concepts into production-ready products through a combination of digital design and technical expertise.",
+    "intro2_html": "From <strong>3D modeling,</strong> prototyping, and rendering to tech packs, construction specs, fit testing, and factory coordination, we <strong>support</strong> the full development process from concept to production.",
     "pillar1": "Design",
     "pillar2": "Creativity",
     "pillar3": "Technology",
     "pillar4": "Innovation"
   },
   "contact": {
+    "teaser_heading": "Wanna know more?",
+    "teaser_body1": "Reach out to talk design, development, future collaborations, or new ideas worth building.",
+    "teaser_body2": "We're always looking for ambitious brands, fresh perspectives, and projects.",
     "heading": "Let's work together",
-    "company": "UnfoldCreative S.R.L.",
-    "address1": "Ioan Corneli Nr. 2.",
-    "address2": "410609 Oradea RO.",
-    "email": "info@unfoldcreative.com",
-    "phone1": "+40 778 788 571",
-    "phone2": "+49 171 44 34 179",
     "name": "Name",
     "surname": "Surname",
     "firm": "Firm",
-    "email_label": "Email",
+    "email": "Email",
     "message": "Message",
-    "privacy": "I read and accepted the privacy policy",
+    "privacy": "I read and accepted the",
+    "privacyLink": "privacy policy",
     "send": "SEND"
   },
   "footer": {

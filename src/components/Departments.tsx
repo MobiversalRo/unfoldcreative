@@ -2,128 +2,67 @@
 
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-
-interface SubSectionProps {
-  heading: string;
-  body: React.ReactNode;
-  images: { src: string; alt: string }[];
-  reverse?: boolean;
-}
-
-function SubSection({ heading, body, images, reverse }: SubSectionProps) {
-  return (
-    <div className={`py-16 border-t border-black/10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start ${reverse ? "lg:[direction:rtl]" : ""}`}>
-      {/* Images */}
-      <div className={`flex gap-4 ${reverse ? "lg:[direction:ltr]" : ""}`}>
-        {images.map((img, i) => (
-          <div key={i} className="relative flex-1 aspect-[3/4] min-h-[280px]">
-            <Image
-              src={img.src}
-              alt={img.alt}
-              fill
-              className="object-cover"
-              sizes="(max-width: 1024px) 50vw, 25vw"
-            />
-          </div>
-        ))}
-      </div>
-
-      {/* Text */}
-      <div className={`flex flex-col justify-center ${reverse ? "lg:[direction:ltr]" : ""}`}>
-        <h3 className="text-2xl md:text-3xl font-bold uppercase underline underline-offset-4 mb-6">
-          {heading}
-        </h3>
-        <p className="text-base leading-relaxed text-black/75">{body}</p>
-      </div>
-    </div>
-  );
-}
+import HoverImage from "./HoverImage";
 
 export default function Departments() {
   const t = useTranslations("departments");
 
   return (
-    <section id="departments" className="bg-white text-black py-20 lg:py-28 px-6">
+    <section id="departments" className="bg-white text-black pt-20 lg:pt-28 pb-12 px-6">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold uppercase underline underline-offset-4 mb-10">
+        <h2 className="text-center text-3xl md:text-4xl font-bold uppercase underline underline-offset-4 mb-16">
           {t("heading")}
         </h2>
 
-        {/* Intro text */}
-        <p className="text-lg leading-relaxed text-black/75 mb-12 max-w-3xl">
-          {t.rich("intro_html", { strong: (chunks) => <strong>{chunks}</strong> })}
-        </p>
+        {/* ── 3-column editorial intro: narrow | wide | narrow ── */}
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] gap-6 lg:gap-6 items-start">
 
-        {/* Intro 3-image row */}
-        <div className="grid grid-cols-3 gap-4 mb-4">
-          {[
-            { src: "/images/shoe-lasts-pink.jpeg", alt: "Shoe lasts" },
-            { src: "/images/shoe-sketches.jpeg", alt: "Shoe sketches" },
-            { src: "/images/leather-swatches.jpeg", alt: "Leather swatches" },
-          ].map((img) => (
-            <div key={img.src} className="relative aspect-[4/3]">
+          {/* Left: shoe lasts — colour default, B&W on hover */}
+          <div className="relative aspect-[2/3] min-h-[360px] overflow-hidden">
+            <HoverImage
+              colorSrc="/images/shoe-lasts-pink.jpeg"
+              bwSrc="/images/shoe-lasts-bw.jpeg"
+              alt="Shoe lasts"
+              sizes="(max-width: 1024px) 100vw, 20vw"
+            />
+          </div>
+
+          {/* Center: intro text + technical shoe sketch */}
+          <div className="flex flex-col gap-8 lg:px-8">
+            <p className="text-base leading-relaxed text-black/75 text-center">
+              {t.rich("intro_html", { strong: (chunks) => <strong>{chunks}</strong> })}
+            </p>
+            <div className="relative aspect-[4/3]">
               <Image
-                src={img.src}
-                alt={img.alt}
+                src="/images/sneaker-technical-bw.png"
+                alt="Shoe technical sketches"
                 fill
-                className="object-cover"
-                sizes="33vw"
+                className="object-contain"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
-          ))}
+          </div>
+
+          {/* Right: two stacked images — colour default, B&W on hover */}
+          <div className="flex flex-col gap-4">
+            <div className="relative aspect-[4/3] overflow-hidden">
+              <HoverImage
+                colorSrc="/images/tools-color.jpeg"
+                bwSrc="/images/tools-bw.jpeg"
+                alt="Workshop tools"
+                sizes="(max-width: 1024px) 100vw, 20vw"
+              />
+            </div>
+            <div className="relative aspect-[4/3] overflow-hidden">
+              <HoverImage
+                colorSrc="/images/sneaker-fabric-color.jpeg"
+                bwSrc="/images/sneaker-fabric-bw.jpeg"
+                alt="Sneaker on fabric"
+                sizes="(max-width: 1024px) 100vw, 20vw"
+              />
+            </div>
+          </div>
         </div>
-
-        {/* TRENDRESEARCH */}
-        <SubSection
-          heading={t("trend.heading")}
-          body={t("trend.body")}
-          images={[
-            { src: "/images/design-workspace.png", alt: "Design workspace" },
-            { src: "/images/shoe-sketches.jpeg", alt: "Shoe sketches" },
-          ]}
-        />
-
-        {/* DESIGN / STYLE */}
-        <SubSection
-          heading={t("design.heading")}
-          body={t.rich("design.body_html", { strong: (c) => <strong>{c}</strong> })}
-          images={[
-            { src: "/images/shoe-sketches.jpeg", alt: "Shoe sketches" },
-            { src: "/images/designer-sketch.png", alt: "Designer sketch" },
-          ]}
-          reverse
-        />
-
-        {/* SOURCING */}
-        <SubSection
-          heading={t("sourcing.heading")}
-          body={t("sourcing.body")}
-          images={[
-            { src: "/images/leather-rolls.jpeg", alt: "Leather rolls" },
-            { src: "/images/leather-swatches.jpeg", alt: "Leather swatches" },
-          ]}
-        />
-
-        {/* LABORATORY */}
-        <SubSection
-          heading={t("laboratory.heading")}
-          body={t.rich("laboratory.body_html", { strong: (c) => <strong>{c}</strong> })}
-          images={[
-            { src: "/images/workshop.jpeg", alt: "Workshop" },
-            { src: "/images/tools.jpeg", alt: "Tools" },
-          ]}
-          reverse
-        />
-
-        {/* GRAPHICS */}
-        <SubSection
-          heading={t("graphics.heading")}
-          body={t.rich("graphics.body_html", { strong: (c) => <strong>{c}</strong> })}
-          images={[
-            { src: "/images/robot-shoe.png", alt: "Robot shoe" },
-            { src: "/images/design-workspace.png", alt: "Design workspace" },
-          ]}
-        />
       </div>
     </section>
   );
