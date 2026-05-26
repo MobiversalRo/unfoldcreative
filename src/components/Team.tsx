@@ -16,17 +16,16 @@ export default function Team() {
 
   return (
     <section id="team" className="bg-white text-black py-20 lg:py-28 px-8 md:px-12">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-12 lg:gap-14">
+      <div className="max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-16 lg:gap-20">
           {TEAM_IMAGES.map((member, i) => (
             <div key={i} className="flex flex-col items-center">
 
-              {/* Photo card with paper-like drop shadow */}
+              {/* Photo card — 122×256pt ratio, elliptical bottom shadow */}
               <div
-                className="relative w-full aspect-[3/4] overflow-hidden"
+                className="relative w-full aspect-[122/256] overflow-hidden"
                 style={{
-                  boxShadow:
-                    "0 8px 20px rgba(0,0,0,0.12), 0 20px 50px rgba(0,0,0,0.10)",
+                  boxShadow: "0 28px 28px -12px rgba(0,0,0,0.30)",
                 }}
               >
                 <Image

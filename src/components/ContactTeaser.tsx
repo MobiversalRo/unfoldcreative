@@ -7,35 +7,31 @@ export default function ContactTeaser() {
 
   return (
     <section className="bg-white py-24 lg:py-32 px-6">
-      <div className="max-w-4xl mx-auto flex flex-col items-center">
-        <div className="w-full max-w-3xl">
+      {/* Base is the full-width reference — lid is inset so base appears wider */}
+      <div className="max-w-[960px] mx-auto">
 
-          {/* Screen lid */}
-          <div className="bg-[#d0d0d0] rounded-[20px] p-[10px] shadow-2xl">
-            <div className="bg-[#f0f0f0] rounded-[12px] overflow-hidden">
-              <div className="bg-white flex flex-col items-center justify-center text-center py-20 px-10 md:px-24 min-h-[380px]">
-                <h2 className="text-[30px] font-bold underline underline-offset-4 mb-12">
-                  {t("teaser_heading")}
-                </h2>
-                <p className="text-[15px] leading-relaxed text-[#5E5E5E] max-w-md">
-                  {t("teaser_body1")}
-                </p>
-                <p className="text-[15px] leading-relaxed text-[#5E5E5E] max-w-md mt-4">
-                  {t("teaser_body2")}
-                </p>
-              </div>
+        {/* Lid — no inset on mobile, wide inset on desktop */}
+        <div className="mx-0 lg:mx-20">
+          {/* Frame — rounded top corners, flat bottom to connect flush with base */}
+          <div className="bg-[#D5D5D5] rounded-t-[10px] p-[16px] lg:p-[24px]">
+            {/* Screen — natural height on mobile, fixed ratio on desktop */}
+            <div className="bg-white lg:aspect-[644/361] flex flex-col items-center justify-center text-center py-12 px-6 md:px-12 lg:py-0 lg:px-20">
+              <h2 className="text-[24px] lg:text-[30px] font-bold underline underline-offset-4 mb-8 lg:mb-12">
+                {t("teaser_heading")}
+              </h2>
+              <p className="text-[15px] leading-relaxed text-[#5E5E5E] max-w-sm lg:max-w-md">
+                {t("teaser_body1")}
+              </p>
+              <p className="text-[15px] leading-relaxed text-[#5E5E5E] max-w-sm lg:max-w-md mt-4">
+                {t("teaser_body2")}
+              </p>
             </div>
           </div>
-
-          {/* Hinge */}
-          <div className="bg-[#c0c0c0] h-[6px] mx-1" />
-
-          {/* Base */}
-          <div className="bg-[#d0d0d0] h-7 rounded-b-[14px] flex items-center justify-center">
-            <div className="w-20 h-[5px] rounded-full bg-[#b8b8b8]" />
-          </div>
-
         </div>
+
+        {/* Base — full container width, flat top connects to lid, rounded bottom */}
+        <div className="bg-[#D5D5D5] h-6 lg:h-10 rounded-b-[10px] lg:rounded-b-[14px] -mt-[10px] lg:-mt-[24px]" />
+
       </div>
     </section>
   );

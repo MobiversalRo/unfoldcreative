@@ -25,15 +25,15 @@ export default function About() {
               />
             </div>
 
-            {/* Right: heading + body both right-aligned */}
-            <div className="flex flex-col items-end text-right">
-              <h2 className="text-[30px] font-bold uppercase underline underline-offset-4 mb-10">
+            {/* Right: heading right-aligned, body centred */}
+            <div className="flex flex-col">
+              <h2 className="text-right text-[30px] font-bold uppercase underline underline-offset-4 mb-10">
                 {tAbout("heading")}
               </h2>
-              <p className="text-[15px] leading-relaxed text-[#5E5E5E] mb-6">
+              <p className="text-[15px] leading-relaxed text-[#5E5E5E] text-center mb-6">
                 {tAbout.rich("body1_html", { strong: (c) => <strong className="text-black">{c}</strong> })}
               </p>
-              <p className="text-[15px] leading-relaxed text-[#5E5E5E]">
+              <p className="text-[15px] leading-relaxed text-[#5E5E5E] text-center">
                 {tAbout.rich("body2_html", { strong: (c) => <strong className="text-black">{c}</strong> })}
               </p>
             </div>
@@ -42,7 +42,7 @@ export default function About() {
       </section>
 
       {/* MISSION */}
-      <section className="bg-white text-black py-20 lg:py-32 border-t border-black/10">
+      <section className="bg-white text-black py-20 lg:py-32">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 min-h-[520px]">
 
           {/* Left: heading centred + two centred paragraphs */}
@@ -51,10 +51,10 @@ export default function About() {
               {tMission("heading")}
             </h2>
             <p className="text-[15px] leading-relaxed text-[#5E5E5E] text-center mb-8">
-              {tMission.rich("body1_html", { strong: (c) => <strong>{c}</strong> })}
+              {tMission.rich("body1_html", { strong: (c) => <strong className="text-black">{c}</strong> })}
             </p>
             <p className="text-[15px] leading-relaxed text-[#5E5E5E] text-center">
-              {tMission.rich("body2_html", { strong: (c) => <strong>{c}</strong> })}
+              {tMission.rich("body2_html", { strong: (c) => <strong className="text-black">{c}</strong> })}
             </p>
           </div>
 

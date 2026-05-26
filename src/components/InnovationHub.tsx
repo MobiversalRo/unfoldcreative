@@ -16,23 +16,21 @@ export default function InnovationHub() {
           {t("heading")}
         </h2>
 
-        {/* 3-column grid — side images aligned to bottom, starting at ~half-sphere height */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr_1fr] gap-8 lg:gap-6 items-stretch">
+        {/* 3-column grid — items-end aligns all column bottoms on the same line */}
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] gap-8 lg:gap-6 lg:items-end">
 
-          {/* Left: pushed to bottom so it starts around halfway down the sphere */}
-          <div className="flex flex-col justify-end">
-            <div className="relative w-full h-[480px] lg:h-[520px] overflow-hidden">
-              <Image
-                src="/images/robot-shoe.png"
-                alt="Innovation and technology"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 33vw"
-              />
-            </div>
+          {/* Left: 225×411pt — bottom aligned by grid */}
+          <div className="relative w-full aspect-[225/411] overflow-hidden">
+            <Image
+              src="/images/robot-shoe.png"
+              alt="Innovation and technology"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 25vw"
+            />
           </div>
 
-          {/* Center: sphere animation + two paragraphs */}
+          {/* Center: sphere + text pushed to bottom with mt-auto */}
           <div className="flex flex-col lg:px-8 xl:px-12">
             <div className="relative w-full aspect-square">
               <LazyVideo
@@ -41,25 +39,25 @@ export default function InnovationHub() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <p className="text-[15px] leading-relaxed text-[#5E5E5E] mt-8 text-center">
-              {t.rich("intro1_html", { strong: (c) => <strong>{c}</strong> })}
-            </p>
-            <p className="text-[15px] leading-relaxed text-[#5E5E5E] mt-5 text-center">
-              {t.rich("intro2_html", { strong: (c) => <strong>{c}</strong> })}
-            </p>
+            <div className="mt-auto pt-8 max-w-[400px] mx-auto w-full">
+              <p className="text-[15px] leading-relaxed text-[#5E5E5E] text-center">
+                {t.rich("intro1_html", { strong: (c) => <strong className="text-black">{c}</strong> })}
+              </p>
+              <p className="text-[15px] leading-relaxed text-[#5E5E5E] mt-5 text-center">
+                {t.rich("intro2_html", { strong: (c) => <strong className="text-black">{c}</strong> })}
+              </p>
+            </div>
           </div>
 
-          {/* Right: pushed to bottom — same height as left */}
-          <div className="flex flex-col justify-end">
-            <div className="relative w-full h-[480px] lg:h-[520px] overflow-hidden">
-              <Image
-                src="/images/pink-heels.png"
-                alt="Creative footwear design"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 33vw"
-              />
-            </div>
+          {/* Right: 225×411pt — bottom aligned by grid */}
+          <div className="relative w-full aspect-[225/411] overflow-hidden">
+            <Image
+              src="/images/pink-heels.png"
+              alt="Creative footwear design"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 25vw"
+            />
           </div>
 
         </div>

@@ -14,7 +14,7 @@ interface SubSectionProps {
 function SubSection({ heading, body, images, reverse }: SubSectionProps) {
   return (
     <div
-      className={`py-16 border-t border-black/10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center ${
+      className={`py-16 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center ${
         reverse ? "lg:[direction:rtl]" : ""
       }`}
     >
@@ -66,7 +66,7 @@ export default function DepartmentsSubSections() {
         {/* ── TRENDRESEARCH — single image left, text right ── */}
         <SubSection
           heading={t("trend.heading")}
-          body={t.rich("trend.body_html", { strong: (c) => <strong>{c}</strong> })}
+          body={t.rich("trend.body_html", { strong: (c) => <strong className="text-black">{c}</strong> })}
           images={[
             { colorSrc: "/images/trend-workspace.png", alt: "Trend research workspace" },
           ]}
@@ -75,7 +75,7 @@ export default function DepartmentsSubSections() {
         {/* ── DESIGN / STYLE — text left, single illustration right ── */}
         <SubSection
           heading={t("design.heading")}
-          body={t.rich("design.body_html", { strong: (c) => <strong>{c}</strong> })}
+          body={t.rich("design.body_html", { strong: (c) => <strong className="text-black">{c}</strong> })}
           images={[
             { colorSrc: "/images/shoe-sketches.jpeg", alt: "Shoe design sketches" },
           ]}
@@ -85,7 +85,7 @@ export default function DepartmentsSubSections() {
         {/* ── SOURCING — two leather images left, text right ── */}
         <SubSection
           heading={t("sourcing.heading")}
-          body={t.rich("sourcing.body_html", { strong: (c) => <strong>{c}</strong> })}
+          body={t.rich("sourcing.body_html", { strong: (c) => <strong className="text-black">{c}</strong> })}
           images={[
             { colorSrc: "/images/leather-stacked-color.jpeg", alt: "Stacked leather rolls" },
             { colorSrc: "/images/leather-samples-color.jpeg", alt: "Leather colour samples" },
@@ -95,7 +95,7 @@ export default function DepartmentsSubSections() {
         {/* ── LABORATORY — text left, workshop + sewing images right ── */}
         <SubSection
           heading={t("laboratory.heading")}
-          body={t.rich("laboratory.body_html", { strong: (c) => <strong>{c}</strong> })}
+          body={t.rich("laboratory.body_html", { strong: (c) => <strong className="text-black">{c}</strong> })}
           images={[
             { colorSrc: "/images/workshop-color.jpeg", alt: "Workshop shoe last" },
             { colorSrc: "/images/sewing-color.jpeg", alt: "Industrial sewing machine" },
@@ -106,7 +106,7 @@ export default function DepartmentsSubSections() {
         {/* ── GRAPHICS — sneaker + floral images left, text right ── */}
         <SubSection
           heading={t("graphics.heading")}
-          body={t.rich("graphics.body_html", { strong: (c) => <strong>{c}</strong> })}
+          body={t.rich("graphics.body_html", { strong: (c) => <strong className="text-black">{c}</strong> })}
           images={[
             { colorSrc: "/images/sneaker-running-illustration.png", alt: "Running shoe technical illustration" },
             { colorSrc: "/images/graphics-floral.png", alt: "Floral graphic print" },
