@@ -14,13 +14,13 @@ export default function ContactTeaser() {
           <div className="bg-[#d0d0d0] rounded-[20px] p-[10px] shadow-2xl">
             <div className="bg-[#f0f0f0] rounded-[12px] overflow-hidden">
               <div className="bg-white flex flex-col items-center justify-center text-center py-20 px-10 md:px-24 min-h-[380px]">
-                <h2 className="text-3xl md:text-4xl font-bold underline underline-offset-4 mb-12">
+                <h2 className="text-[30px] font-bold underline underline-offset-4 mb-12">
                   {t("teaser_heading")}
                 </h2>
-                <p className="text-lg leading-relaxed text-black/55 max-w-md">
+                <p className="text-[15px] leading-relaxed text-[#5E5E5E] max-w-md">
                   {t("teaser_body1")}
                 </p>
-                <p className="text-lg leading-relaxed text-black/55 max-w-md mt-4">
+                <p className="text-[15px] leading-relaxed text-[#5E5E5E] max-w-md mt-4">
                   {t("teaser_body2")}
                 </p>
               </div>

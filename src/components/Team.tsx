@@ -39,7 +39,7 @@ export default function Team() {
               </div>
 
               {/* Role label */}
-              <p className="mt-8 text-base md:text-lg font-bold tracking-wide text-center text-black">
+              <p className="mt-8 text-[15px] font-bold tracking-wide text-center text-black">
                 {roles[i]}
               </p>
 

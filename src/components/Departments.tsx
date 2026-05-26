@@ -10,7 +10,7 @@ export default function Departments() {
   return (
     <section id="departments" className="bg-white text-black pt-20 lg:pt-28 pb-12 px-6">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-center text-3xl md:text-4xl font-bold uppercase underline underline-offset-4 mb-16">
+        <h2 className="text-center text-[30px] font-bold uppercase underline underline-offset-4 mb-16">
           {t("heading")}
         </h2>
 
@@ -29,7 +29,7 @@ export default function Departments() {
 
           {/* Center: intro text + technical shoe sketch */}
           <div className="flex flex-col gap-8 lg:px-8">
-            <p className="text-base leading-relaxed text-black/75 text-center">
+            <p className="text-[15px] leading-relaxed text-[#5E5E5E] text-center">
               {t.rich("intro_html", { strong: (chunks) => <strong>{chunks}</strong> })}
             </p>
             <div className="relative aspect-[4/3]">

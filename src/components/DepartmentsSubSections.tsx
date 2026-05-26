@@ -47,10 +47,10 @@ function SubSection({ heading, body, images, reverse }: SubSectionProps) {
 
       {/* Text */}
       <div className={`flex flex-col justify-center ${reverse ? "lg:[direction:ltr]" : ""}`}>
-        <h3 className="text-2xl md:text-3xl font-bold uppercase underline underline-offset-4 mb-6">
+        <h3 className="text-[30px] font-bold uppercase underline underline-offset-4 mb-6">
           {heading}
         </h3>
-        <p className="text-base leading-relaxed text-black/75">{body}</p>
+        <p className="text-[15px] leading-relaxed text-[#5E5E5E]">{body}</p>
       </div>
     </div>
   );

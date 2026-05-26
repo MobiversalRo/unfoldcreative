@@ -80,7 +80,7 @@ export default function InnovationPageContent() {
               </div>
               {/* Word */}
               <div className="flex-1 flex items-start pl-6 pt-2">
-                <h2 className="text-[11vw] font-black leading-none tracking-tight">
+                <h2 className="text-[87px] font-black leading-none tracking-tight">
                   {word}
                 </h2>
               </div>
@@ -93,7 +93,7 @@ export default function InnovationPageContent() {
           <div key={pillar.wordKey} className="flex items-end pl-[5%] py-14">
             {/* Word */}
             <div className="flex-1 pr-6 pb-2">
-              <h2 className="text-[11vw] font-black leading-none tracking-tight">
+              <h2 className="text-[87px] font-black leading-none tracking-tight">
                 {word}
               </h2>
             </div>

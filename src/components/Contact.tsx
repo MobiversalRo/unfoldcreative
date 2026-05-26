@@ -67,10 +67,10 @@ export default function Contact() {
 
           {/* Left: heading + company info */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-10">
+            <h2 className="text-[30px] font-bold mb-10">
               {t("heading")}
             </h2>
-            <div className="text-sm text-black/70 space-y-1 leading-relaxed">
+            <div className="text-[15px] text-[#5E5E5E] space-y-1 leading-relaxed">
               <p className="mb-3">
                 <span className="font-normal">Unfold</span>
                 <strong className="underline underline-offset-2">Creative</strong>
@@ -90,7 +90,7 @@ export default function Contact() {
             {/* Row 1: Name + Surname */}
             <div className="grid grid-cols-2 gap-6">
               <div className="flex items-center gap-2 border-b border-black/25 pb-2">
-                <span className="text-sm text-black/50 whitespace-nowrap">{t("name")}</span>
+                <span className="text-sm text-[#5E5E5E] whitespace-nowrap">{t("name")}</span>
                 <span className="text-black/30 text-xs">········→</span>
                 <input
                   type="text"
@@ -99,7 +99,7 @@ export default function Contact() {
                 />
               </div>
               <div className="flex items-center gap-2 border-b border-black/25 pb-2">
-                <span className="text-sm text-black/50 whitespace-nowrap">{t("surname")}</span>
+                <span className="text-sm text-[#5E5E5E] whitespace-nowrap">{t("surname")}</span>
                 <span className="text-black/30 text-xs">········→</span>
                 <input
                   type="text"
@@ -112,7 +112,7 @@ export default function Contact() {
             {/* Row 2: Firm + Email */}
             <div className="grid grid-cols-2 gap-6">
               <div className="flex items-center gap-2 border-b border-black/25 pb-2">
-                <span className="text-sm text-black/50 whitespace-nowrap">{t("firm")}</span>
+                <span className="text-sm text-[#5E5E5E] whitespace-nowrap">{t("firm")}</span>
                 <span className="text-black/30 text-xs">········→</span>
                 <input
                   type="text"
@@ -121,7 +121,7 @@ export default function Contact() {
                 />
               </div>
               <div className="flex items-center gap-2 border-b border-black/25 pb-2">
-                <span className="text-sm text-black/50 whitespace-nowrap">{t("email")}</span>
+                <span className="text-sm text-[#5E5E5E] whitespace-nowrap">{t("email")}</span>
                 <span className="text-black/30 text-xs">········→</span>
                 <input
                   type="email"
@@ -133,7 +133,7 @@ export default function Contact() {
 
             {/* Message */}
             <div className="border-b border-black/25 pb-16">
-              <span className="text-sm text-black/50 block mb-3">{t("message")}</span>
+              <span className="text-sm text-[#5E5E5E] block mb-3">{t("message")}</span>
               <textarea
                 rows={1}
                 className="w-full outline-none text-sm bg-transparent resize-none"
@@ -144,7 +144,7 @@ export default function Contact() {
             {/* Privacy checkbox */}
             <div className="flex items-center gap-3">
               <div className="w-4 h-4 border border-black/50 flex-shrink-0" />
-              <span className="text-sm text-black/70">
+              <span className="text-sm text-[#5E5E5E]">
                 {t("privacy")} <strong>{t("privacyLink")}</strong>
               </span>
             </div>

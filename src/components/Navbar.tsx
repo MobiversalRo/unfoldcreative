@@ -122,23 +122,41 @@ export default function Navbar() {
             <button
               key={item.href}
               onClick={() => handleNavClick(item.href)}
-              className="flex-1 relative overflow-hidden group cursor-pointer border-r border-white/10 last:border-r-0"
+              className="flex-1 flex flex-col group cursor-pointer border-r border-white/10 last:border-r-0 overflow-hidden"
             >
-              <div className="absolute inset-0">
+              {/* ── Main image (65% height) with centred label ── */}
+              <div className="relative w-full flex-[0_0_65%] overflow-hidden">
                 <Image
                   src={item.image}
                   alt={item.label}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   sizes="25vw"
                 />
+                {/* Slight dark overlay for legibility */}
+                <div className="absolute inset-0 bg-black/25" />
+                {/* Centred label */}
+                <div className="absolute inset-0 flex items-center justify-center px-3">
+                  <span className="text-[#f5ff3c] font-bold text-[30px] tracking-[0.1em] uppercase leading-tight text-center drop-shadow-lg">
+                    {item.label}
+                  </span>
+                </div>
               </div>
-              {/* Subtle gradient at bottom for label legibility */}
-              <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/60 to-transparent" />
-              <div className="absolute bottom-14 left-0 right-0 text-center px-4">
-                <span className="text-[#f5ff3c] font-bold text-xl md:text-2xl lg:text-3xl tracking-[0.1em] uppercase leading-tight drop-shadow-lg">
-                  {item.label}
-                </span>
+
+              {/* ── Mirror reflection (35% height) ── */}
+              <div className="relative w-full flex-[0_0_35%] overflow-hidden bg-white">
+                {/* Same image, flipped vertically */}
+                <Image
+                  src={item.image}
+                  alt=""
+                  aria-hidden="true"
+                  fill
+                  className="object-cover object-center opacity-50"
+                  style={{ transform: "scaleY(-1)" }}
+                  sizes="25vw"
+                />
+                {/* White gradient: fades from transparent at top to white at bottom */}
+                <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-white/60 to-white" />
               </div>
             </button>
           ))}

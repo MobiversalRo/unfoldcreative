@@ -13,8 +13,8 @@ export default function About() {
       <section id="about" className="bg-white text-black py-20 lg:py-32 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            {/* Left: blurry B&W image */}
-            <div className="relative w-full aspect-[4/3]">
+            {/* Left: blurry B&W image — 442×254pt ratio */}
+            <div className="relative w-full aspect-[442/254]">
               <Image
                 src="/images/about-bw.jpeg"
                 alt="Footwear craftsmanship"
@@ -25,16 +25,16 @@ export default function About() {
               />
             </div>
 
-            {/* Right: heading right-aligned, body centred */}
-            <div className="flex flex-col items-center text-center">
-              <h2 className="self-end text-3xl md:text-4xl font-bold uppercase underline underline-offset-4 mb-10">
+            {/* Right: heading + body both right-aligned */}
+            <div className="flex flex-col items-end text-right">
+              <h2 className="text-[30px] font-bold uppercase underline underline-offset-4 mb-10">
                 {tAbout("heading")}
               </h2>
-              <p className="text-lg leading-relaxed text-black/80 mb-6">
-                {tAbout.rich("body1_html", { strong: (c) => <strong>{c}</strong> })}
+              <p className="text-[15px] leading-relaxed text-[#5E5E5E] mb-6">
+                {tAbout.rich("body1_html", { strong: (c) => <strong className="text-black">{c}</strong> })}
               </p>
-              <p className="text-lg leading-relaxed text-black/80">
-                {tAbout.rich("body2_html", { strong: (c) => <strong>{c}</strong> })}
+              <p className="text-[15px] leading-relaxed text-[#5E5E5E]">
+                {tAbout.rich("body2_html", { strong: (c) => <strong className="text-black">{c}</strong> })}
               </p>
             </div>
           </div>
@@ -47,13 +47,13 @@ export default function About() {
 
           {/* Left: heading centred + two centred paragraphs */}
           <div className="flex flex-col px-6 lg:px-16 py-10 lg:py-0 justify-center">
-            <h2 className="text-center text-3xl md:text-4xl font-bold uppercase underline underline-offset-4 mb-14">
+            <h2 className="text-center text-[30px] font-bold uppercase underline underline-offset-4 mb-14">
               {tMission("heading")}
             </h2>
-            <p className="text-base leading-relaxed text-black/65 text-center mb-8">
+            <p className="text-[15px] leading-relaxed text-[#5E5E5E] text-center mb-8">
               {tMission.rich("body1_html", { strong: (c) => <strong>{c}</strong> })}
             </p>
-            <p className="text-base leading-relaxed text-black/65 text-center">
+            <p className="text-[15px] leading-relaxed text-[#5E5E5E] text-center">
               {tMission.rich("body2_html", { strong: (c) => <strong>{c}</strong> })}
             </p>
           </div>
