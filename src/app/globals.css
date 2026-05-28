@@ -39,3 +39,14 @@ body {
   background: #333;
   border-radius: 2px;
 }
+
+/* Menu icon — slow rotation around center */
+@keyframes menu-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.menu-icon-spin {
+  animation: menu-spin 8s linear infinite;
+  transform-origin: 50% 50%;
+}

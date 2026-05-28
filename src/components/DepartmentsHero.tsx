@@ -23,9 +23,9 @@ export default function DepartmentsHero() {
         <div className="absolute inset-0 bg-black/15" />
       </div>
 
-      {/* Title — black, anchored at the bottom inside the hero */}
-      <div className="absolute bottom-8 left-0 right-0 flex justify-center z-10 px-4">
-        <h1 className="text-black text-[30px] font-bold uppercase tracking-[0.12em] leading-none">
+      {/* Title — positioned just below the vertical centre of the hero */}
+      <div className="absolute top-[58%] -translate-y-1/2 left-0 right-0 flex justify-center z-10 px-4">
+        <h1 className="text-black text-[36px] font-bold uppercase tracking-[0.12em] leading-none">
           {t("heading")}
         </h1>
       </div>

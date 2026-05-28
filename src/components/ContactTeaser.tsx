@@ -1,9 +1,11 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import Link from "next/link";
 
 export default function ContactTeaser() {
   const t = useTranslations("contact");
+  const locale = useLocale();
 
   return (
     <section className="bg-white py-24 lg:py-32 px-6">
@@ -16,13 +18,15 @@ export default function ContactTeaser() {
           <div className="bg-[#D5D5D5] rounded-t-[10px] p-[16px] lg:p-[24px]">
             {/* Screen — natural height on mobile, fixed ratio on desktop */}
             <div className="bg-white lg:aspect-[644/361] flex flex-col items-center justify-center text-center py-12 px-6 md:px-12 lg:py-0 lg:px-20">
-              <h2 className="text-[24px] lg:text-[30px] font-bold underline underline-offset-4 mb-8 lg:mb-12">
-                {t("teaser_heading")}
+              <h2 className="text-[24px] lg:text-[30px] font-bold mb-8 lg:mb-12">
+                <Link href={`/${locale}/contact`} className="underline underline-offset-4 hover:opacity-60 transition-opacity">
+                  {t("teaser_heading")}
+                </Link>
               </h2>
-              <p className="text-[15px] leading-relaxed text-[#5E5E5E] max-w-sm lg:max-w-md">
+              <p className="text-[20px] leading-relaxed text-[#5E5E5E] max-w-sm lg:max-w-md">
                 {t("teaser_body1")}
               </p>
-              <p className="text-[15px] leading-relaxed text-[#5E5E5E] max-w-sm lg:max-w-md mt-4">
+              <p className="text-[20px] leading-relaxed text-[#5E5E5E] max-w-sm lg:max-w-md mt-4">
                 {t("teaser_body2")}
               </p>
             </div>

@@ -10,12 +10,16 @@ const PILLARS = [
     image: "/images/break-rules-neon2.jpeg",
     imageAlt: "Break The Rules neon sign",
     imageLeft: true,
+    aspect: "307/370",
+    imageWidth: "27%",   // 307pt
   },
   {
     wordKey: "pillar2" as const,        // Creativity
     image: "/images/pink-heels.png",
     imageAlt: "Pink dripping heels",
     imageLeft: false,
+    aspect: "307/390",
+    imageWidth: "27%",   // 307pt — same physical width as pillar1
   },
   {
     wordKey: "pillar3" as const,        // Technology
@@ -23,12 +27,16 @@ const PILLARS = [
     image: "/images/robot-orange.png",
     imageAlt: "Robot arm technology",
     imageLeft: true,
+    aspect: "302/368",
+    imageWidth: "26%",   // 302pt
   },
   {
     wordKey: "pillar4" as const,        // Innovation
     image: "/images/innovation-egg.png",
     imageAlt: "Innovation",
     imageLeft: false,
+    aspect: "307/316",
+    imageWidth: "27%",   // 307pt
   },
 ];
 
@@ -73,14 +81,17 @@ export default function InnovationPageContent() {
           return (
             <div key={pillar.wordKey} className="flex items-start px-[5%] py-14">
               {/* Media */}
-              <div className="w-[34%] flex-shrink-0">
-                <div className="relative w-full aspect-[3/4] overflow-hidden">
-                  <PillarMedia pillar={pillar} sizes="34vw" />
+              <div className="flex-shrink-0" style={{ width: pillar.imageWidth }}>
+                <div
+                  className="relative w-full overflow-hidden"
+                  style={{ aspectRatio: pillar.aspect }}
+                >
+                  <PillarMedia pillar={pillar} sizes="(max-width: 768px) 90vw, 30vw" />
                 </div>
               </div>
-              {/* Word */}
-              <div className="flex-1 flex items-start pl-6 pt-2">
-                <h2 className="text-[87px] font-black leading-none tracking-tight">
+              {/* Word — left edge nudges over image right edge */}
+              <div className="flex-1 flex items-start pt-2">
+                <h2 className="text-[87px] font-black leading-none tracking-tight relative z-10 lg:-translate-x-[28px]">
                   {word}
                 </h2>
               </div>
@@ -88,19 +99,23 @@ export default function InnovationPageContent() {
           );
         }
 
-        /* ── Word LEFT, image RIGHT (extends to edge) ── */
+        /* ── Word LEFT, image RIGHT — staggered up to overlap previous section ── */
         return (
-          <div key={pillar.wordKey} className="flex items-end pl-[5%] py-14">
-            {/* Word */}
-            <div className="flex-1 pr-6 pb-2">
-              <h2 className="text-[87px] font-black leading-none tracking-tight">
+          <div key={pillar.wordKey} className="flex items-end px-[5%] pb-14 mt-[-12vw]">
+            {/* Word — right-aligned so its right edge sits at the column boundary,
+                then a small translate pushes it over the image left edge */}
+            <div className="flex-1 pb-2 relative z-10 mb-16">
+              <h2 className="text-[87px] font-black leading-none tracking-tight text-right lg:translate-x-[32px]">
                 {word}
               </h2>
             </div>
-            {/* Media — flush to right edge */}
-            <div className="w-[42%] flex-shrink-0">
-              <div className="relative w-full aspect-[3/4] overflow-hidden">
-                <PillarMedia pillar={pillar} sizes="42vw" />
+            {/* Media */}
+            <div className="flex-shrink-0" style={{ width: pillar.imageWidth }}>
+              <div
+                className="relative w-full overflow-hidden"
+                style={{ aspectRatio: pillar.aspect }}
+              >
+                <PillarMedia pillar={pillar} sizes="(max-width: 768px) 90vw, 30vw" />
               </div>
             </div>
           </div>

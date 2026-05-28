@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import Link from "next/link";
 import Image from "next/image";
@@ -13,6 +13,25 @@ export default function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [pastHero, setPastHero] = useState(false);
+
+  // Pages with a dark video hero at the top
+  const isHeroPage =
+    pathname === `/${locale}` ||
+    pathname === `/${locale}/` ||
+    pathname === `/${locale}/contact`;
+
+  // Listen to scroll — switch to black once the hero scrolls out of view (~52vh)
+  useEffect(() => {
+    if (!isHeroPage) return;
+    setPastHero(false); // reset on route change
+    const onScroll = () => setPastHero(window.scrollY > window.innerHeight * 0.45);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [isHeroPage, pathname]);
+
+  const isDarkHero = isHeroPage && !pastHero;
+  const fg = isDarkHero ? "text-white" : "text-black";
 
   const switchLocale = (targetLocale: string) => {
     const segments = pathname.split("/");
@@ -32,29 +51,44 @@ export default function Navbar() {
     router.push(href);
   };
 
-  // White text on homepage (dark hero bg), black on all sub-pages (white bg)
-  const isHomepage = pathname === `/${locale}`;
-  const fg = isHomepage ? "text-white" : "text-black";
-  const lineBg = isHomepage ? "bg-white" : "bg-black";
-
   return (
     <>
       {/* ── Top navbar ── */}
       <header className="fixed top-0 left-0 right-0 z-50">
         <div className="px-6 py-4 flex items-center justify-between">
-          {/* Logo: UNFOLD (light) CREATIVE (bold) */}
+          {/* Logo */}
           <Link href={`/${locale}`} className="drop-shadow-sm">
-            <span className={`${fg} text-sm tracking-[0.18em] uppercase leading-tight`}>
-              <span className="font-light">UNFOLD</span>
-              <span className="font-bold">CREATIVE</span>
+            <span className={`${fg} leading-tight block transition-colors duration-300`}>
+              <span className="text-[20px] font-normal tracking-[0.04em] uppercase">
+                UNFOLD<span className="font-black">CREATIVE</span>
+              </span>
               <br />
-              <span className="font-light opacity-70 tracking-[0.22em] text-xs">Footwear&nbsp;&nbsp;Design</span>
+              <span className="text-[12px] tracking-[0.08em]">
+                <span className="font-bold">Footwear</span>&nbsp;&nbsp;<span className="font-light">Design</span>
+              </span>
             </span>
           </Link>
 
-          <div className="flex items-center gap-5">
-            {/* Language switcher */}
-            <div className={`flex items-center gap-1 ${fg} text-xs font-medium tracking-widest`}>
+          <div className="flex items-start gap-4">
+            {/* Menu button — icon on top, label below */}
+            <button
+              className={`flex flex-col items-center gap-1 mt-4 ${fg} text-[14px] font-bold tracking-widest uppercase transition-colors duration-300`}
+              onClick={() => setMenuOpen(true)}
+              aria-label="Open menu"
+            >
+              <Image
+                src="/images/menu-icon.png"
+                alt=""
+                width={36}
+                height={36}
+                className={`menu-icon-spin transition-all duration-300 ${isDarkHero ? "invert brightness-200" : ""}`}
+                aria-hidden="true"
+              />
+              <span>{t("menu")}</span>
+            </button>
+
+            {/* Language switcher — top-right, ends at the right edge */}
+            <div className={`flex items-center gap-1 ${fg} text-[10px] font-bold tracking-widest transition-colors duration-300`}>
               <button
                 onClick={() => switchLocale("de")}
                 className={`px-1.5 py-1 transition-opacity ${locale === "de" ? "opacity-100" : "opacity-40 hover:opacity-70"}`}
@@ -69,20 +103,6 @@ export default function Navbar() {
                 EN
               </button>
             </div>
-
-            {/* Menu button */}
-            <button
-              className={`flex items-center gap-2 ${fg} text-sm font-medium tracking-widest uppercase`}
-              onClick={() => setMenuOpen(true)}
-              aria-label="Open menu"
-            >
-              <span>{t("menu")}</span>
-              <span className="relative flex flex-col gap-[5px] justify-center">
-                <span className={`block w-5 h-px ${lineBg}`} />
-                <span className={`block w-5 h-px ${lineBg}`} />
-                <span className={`block w-3 h-px ${lineBg}`} />
-              </span>
-            </button>
           </div>
         </div>
       </header>

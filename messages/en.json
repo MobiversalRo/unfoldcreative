@@ -7,7 +7,8 @@
     "menu": "Menü"
   },
   "hero": {
-    "banner": "WE CREATE SHOES AND ACCESSORIES FOR THE CONSUMERS OF THE WORLD!"
+    "bannerLine1": "WE CREATE SHOES AND ACCESSORIES FOR THE CONSUMERS",
+    "bannerLine2": "OF THE WORLD!"
   },
   "about": {
     "heading": "ABOUT US",
@@ -31,13 +32,15 @@
     "intro_html": "We guide products from first idea to final <strong>prototype</strong> — combining concept <strong>design</strong>, material <strong>sourcing</strong>, product development, and <strong>prototyping</strong> into one seamless process.",
     "trend": {
       "heading": "TRENDRESEARCH",
-      "body": "Our Trend & Strategy division tracks shifts in culture, consumer behaviour, and the market to help shape products with lasting value. Through forecasting, competitor analysis, and strategic positioning, we turn insight into clear direction and stronger product decisions.",
-      "body_html": "Our Trend & Strategy division tracks shifts in culture, consumer behaviour, and the market to help shape products with lasting value. Through forecasting, competitor <strong>analysis</strong>, and <strong>strategic</strong> positioning, we turn insight into clear direction and stronger product decisions."
+      "body": "Our Trend & Strategy division tracks shifts in culture, consumer behaviour, and the market to help shape products with lasting value.",
+      "body_html": "Our Trend & Strategy division tracks shifts in culture, consumer behaviour, and the market to help shape products with lasting value.",
+      "body2_html": "Through forecasting, competitor <strong>analysis</strong>, and <strong>strategic</strong> positioning, we turn insight into clear direction and stronger product decisions."
     },
     "design": {
       "heading": "DESIGN / STYLE",
-      "body": "Our designers turn ideas into shapes with attitude. From early concepts and seasonal direction to sketching, rendering, and collection building, they create products that balance culture, function, with a strong point of view.",
-      "body_html": "Our designers turn ideas into shapes with attitude. From early concepts and seasonal direction to <strong>sketching</strong>, <strong>rendering</strong>, and <strong>collection building</strong>, they create products that balance culture, function, with a strong point of view."
+      "body": "Our designers turn ideas into shapes with attitude.",
+      "body_html": "Our <strong>designers</strong> turn ideas into shapes with attitude.",
+      "body2_html": "From early concepts and seasonal direction to <strong>sketching</strong>, <strong>rendering,</strong> and <strong>collection building</strong>, they create products that balance culture, function, with a strong point of view."
     },
     "sourcing": {
       "heading": "SOURCING",
@@ -46,13 +49,14 @@
     },
     "laboratory": {
       "heading": "LABORATORY",
-      "body": "Behind every product is a development process shaped by precision, technical thinking, and attention to detail — combining last and mold development, prototype building, technical specifications, and digital tools to turn ideas into functional products ready for production.",
-      "body_html": "Behind every product is a development process shaped by precision, technical thinking, and attention to detail — combining <strong>last</strong> and <strong>mold</strong> development, <strong>prototype</strong> building, <strong>technical specifications</strong>, and <strong>digital tools</strong> to turn ideas into functional products ready for production."
+      "body": "Behind every product is a development process shaped by precision, technical thinking, and attention to detail —",
+      "body_html": "Behind every product is a development process shaped by precision, technical thinking, and attention to detail —",
+      "body2_html": "combining <strong>last</strong> and <strong>mold</strong> development, <strong>prototype</strong> building, technical <strong>specifications,</strong> and <strong>digital tools</strong> to turn ideas into functional products ready for production."
     },
     "graphics": {
       "heading": "GRAPHICS",
       "body": "Our Graphic Design division shapes the details that give a brand its identity — creating logos, packaging, outsole graphics, apparel prints, and presentations that feel consistent, considered, and connected to the product.",
-      "body_html": "Our Graphic Design division shapes the details that give a brand its identity — creating logos, packaging, outsole <strong>graphics</strong>, apparel <strong>prints</strong>, and presentations that feel consistent, considered, and connected to the product."
+      "body_html": "Our Graphic Design division shapes the details that give a brand its <strong>identity</strong> — creating <strong>logos</strong>, packaging, outsole <strong>graphics</strong>, apparel <strong>prints</strong>, and presentations that feel consistent, considered, and connected to the product."
     }
   },
   "innovation": {
@@ -77,6 +81,10 @@
     "privacy": "I read and accepted the",
     "privacyLink": "privacy policy",
     "send": "SEND"
+  },
+  "privacy": {
+    "heading": "Privacy Policy",
+    "placeholder": "Privacy policy content coming soon."
   },
   "footer": {
     "homepage": "Homepage",

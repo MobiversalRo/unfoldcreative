@@ -7,17 +7,18 @@
     "menu": "Menü"
   },
   "hero": {
-    "banner": "WIR GESTALTEN SCHUHE UND ACCESSOIRES FÜR DIE VERBRAUCHER DER WELT!"
+    "bannerLine1": "WIR GESTALTEN SCHUHE UND ACCESSOIRES FÜR DIE VERBRAUCHER",
+    "bannerLine2": "DER WELT!"
   },
   "about": {
     "heading": "ÜBER UNS",
-    "body1_html": "Unfold<strong>Creative</strong> ist ein Ort, an dem Vorstellungskraft Schuhen Leben einhaucht, wo Ideen sich entfalten und die Trends von morgen Wurzeln schlagen.",
-    "body2_html": "Hier trifft der Geist des Made in <strong>Europe</strong> auf einen globalen Blick und schafft Stücke, die verfeinert, modern und mühelos authentisch wirken."
+    "body1_html": "Unfold<strong>Creative</strong> ist ein Ort, an dem Vorstellungskraft Schuhen Leben einhaucht, an dem sich Ideen behutsam entfalten und die Trends von morgen ihren Ursprung finden.",
+    "body2_html": "Hier trifft <strong>europäische</strong> Handwerkskunst auf eine globale Perspektive – und daraus entstehen Schuhe, die raffiniert, modern und mühelos authentisch wirken."
   },
   "mission": {
     "heading": "MISSION",
-    "body1_html": "Wir erschaffen Schuhe, die Kultur, Handel und Design in Einklang bringen. Von <strong>kommerziellen</strong> bis hin zu <strong>Premium</strong>-Marken entwickeln wir Kollektionen mit klarer Handschrift und Marktrelevanz.",
-    "body2_html": "Verwurzelt im <strong>Handwerk</strong> helfen wir Marken, stärkere Produkte und tiefere Verbindungen zu ihren Kunden aufzubauen."
+    "body1_html": "Wir entwickeln Schuhe, die Kultur, Kommerz und Design in Balance bringen. Von <strong>kommerziell</strong>- bis <strong>Premium</strong>-Marken entwickeln wir Kollektionen mit klarer Haltung und deutlicher Marktrelevanz.",
+    "body2_html": "Verwurzelt im <strong>Handwerk</strong> unterstützen wir Marken dabei, stärkere Produkte zu entwickeln und bedeutungsvollere Verbindungen zu ihren Konsumenten aufzubauen."
   },
   "team": {
     "role1": "Geschäftsführer",
@@ -27,38 +28,41 @@
   },
   "departments": {
     "heading": "ABTEILUNGEN",
-    "intro": "Wir begleiten Produkte von der ersten Idee bis zum fertigen Prototyp – und verbinden Konzeptdesign, Materialbeschaffung, Produktentwicklung und Prototyping in einem nahtlosen Prozess.",
-    "intro_html": "Wir begleiten Produkte von der ersten Idee bis zum fertigen <strong>Prototyp</strong> – und verbinden Konzept-<strong>design</strong>, Material-<strong>beschaffung</strong>, Produktentwicklung und <strong>Prototyping</strong> in einem nahtlosen Prozess.",
+    "intro": "Wir begleiten Produkte von der ersten Idee bis zum finalen Prototypen — und vereinen Konzeptdesign, Materialbeschaffung, Produktentwicklung und Prototyping in einem nahtlosen Prozess.",
+    "intro_html": "Wir begleiten Produkte von der ersten Idee bis zum finalen <strong>Prototypen</strong> — und vereinen Konzept<strong>design</strong>, Material<strong>beschaffung</strong>, Produktentwicklung und <strong>Prototyping</strong> in einem nahtlosen Prozess.",
     "trend": {
       "heading": "TRENDFORSCHUNG",
-      "body": "Unsere Trend- und Strategieabteilung verfolgt Veränderungen in Kultur, Konsumverhalten und Markt, um Produkte mit nachhaltigem Wert zu gestalten. Durch Trendprognosen, Wettbewerbsanalysen und strategische Positionierung verwandeln wir Erkenntnisse in klare Richtungsvorgaben und stärkere Produktentscheidungen.",
-      "body_html": "Unsere Trend- und Strategieabteilung verfolgt Veränderungen in Kultur, Konsumverhalten und Markt, um Produkte mit nachhaltigem Wert zu gestalten. Durch Trendprognosen, Wettbewerbs-<strong>analysen</strong> und <strong>strategische</strong> Positionierung verwandeln wir Erkenntnisse in klare Richtungsvorgaben und stärkere Produktentscheidungen."
+      "body": "Unser Trend & Strategy Team analysiert kulturelle Trends, Konsumentenverhalten und Marktbewegungen, um Produkte mit echter Relevanz zu entwickeln.",
+      "body_html": "Unser Trend & Strategy Team analysiert kulturelle Trends, Konsumentenverhalten und Marktbewegungen, um Produkte mit echter Relevanz zu entwickeln.",
+      "body2_html": "Mit Prognose, Konkurrenzinformationen und klarer <strong>strategischer</strong> Ausrichtung verwandeln wir Trends und Ideen in starke Produktkonzepte für die <strong>Zukunft</strong>."
     },
     "design": {
       "heading": "DESIGN / STIL",
-      "body": "Unsere Designer verwandeln Ideen in Formen mit Haltung. Von ersten Konzepten und saisonaler Ausrichtung bis hin zu Skizzen, Renderings und Kollektionsaufbau erschaffen sie Produkte, die Kultur, Funktion und einen starken Standpunkt vereinen.",
-      "body_html": "Unsere Designer verwandeln Ideen in Formen mit Haltung. Von ersten Konzepten und saisonaler Ausrichtung bis hin zu <strong>Skizzen</strong>, <strong>Renderings</strong> und <strong>Kollektionsaufbau</strong> erschaffen sie Produkte, die Kultur, Funktion und einen starken Standpunkt vereinen."
+      "body": "Unsere Designer verwandeln Ideen in starke Styles mit Attitude.",
+      "body_html": "Unsere <strong>Designer</strong> verwandeln Ideen in starke Styles mit Attitude.",
+      "body2_html": "Von den ersten Konzepten und saisonalen Richtungen bis hin zu <strong>Sketches</strong>, <strong>Renderings</strong> und dem Aufbau kompletter <strong>Kollektionen entwickeln</strong> sie Produkte, die Kultur, Funktion und eine klare Designhaltung miteinander verbinden."
     },
     "sourcing": {
       "heading": "EINKAUF",
-      "body": "Unser Materialarchiv ist ständig in Bewegung – saisonal aktualisiert mit neuen Ledern, Textilien, Farben und Komponenten aus der gesamten Branche.",
-      "body_html": "Unser Materialarchiv ist ständig in Bewegung – <strong>saisonal</strong> aktualisiert mit neuen Ledern, Textilien, Farben und Komponenten aus der gesamten <strong>Branche</strong>."
+      "body": "Unser Materialarchiv ist ständig in Bewegung — saisonal erweitert durch neue Leder, Textilien, Farben und Komponenten aus der gesamten Industrie.",
+      "body_html": "Unser Materialarchiv ist ständig in Bewegung — <strong>saisonal</strong> erweitert durch neue Leder, Textilien, Farben und Komponenten aus der gesamten <strong>Industrie</strong>."
     },
     "laboratory": {
-      "heading": "LABOR",
-      "body": "Hinter jedem Produkt steckt ein Entwicklungsprozess, der von Präzision, technischem Denken und Liebe zum Detail geprägt ist – von Leisten- und Formenentwicklung über Prototypenbau und technische Spezifikationen bis hin zu digitalen Werkzeugen.",
-      "body_html": "Hinter jedem Produkt steckt ein Entwicklungsprozess, der von Präzision, technischem Denken und Liebe zum Detail geprägt ist – von <strong>Leisten</strong>- und <strong>Formenentwicklung</strong> über <strong>Prototypenbau</strong> und <strong>technische Spezifikationen</strong> bis hin zu <strong>digitalen Werkzeugen</strong>."
+      "heading": "LAB",
+      "body": "Hinter jedem Produkt steckt ein Entwicklungsprozess, geprägt von Präzision, technischem know-how und einem starken Blick fürs Detail.",
+      "body_html": "Hinter jedem Produkt steckt ein Entwicklungsprozess, geprägt von Präzision, technischem know-how und einem starken Blick fürs Detail.",
+      "body2_html": "Von <strong>Leisten</strong>- und <strong>Sohlen</strong>entwicklung über <strong>Prototyping</strong> und technische <strong>Spezifikationen</strong> bis hin zu <strong>digitale Tools</strong> verwandeln wir Ideen in funktionale Produkte, die bereit für die Produktion sind."
     },
     "graphics": {
       "heading": "GRAFIK",
-      "body": "Unsere Grafikdesign-Abteilung gestaltet die Details, die einer Marke ihre Identität geben – von Logos und Verpackungen über Laufsohlen-Grafiken und Prints bis hin zu Präsentationen, die konsistent, durchdacht und produktnah wirken.",
-      "body_html": "Unsere Grafikdesign-Abteilung gestaltet die Details, die einer Marke ihre Identität geben – von Logos und Verpackungen über Laufsohlen-<strong>Grafiken</strong> und <strong>Prints</strong> bis hin zu Präsentationen, die konsistent, durchdacht und produktnah wirken."
+      "body": "Unsere Grafikdesigner entwickelt Details, die einem Brand ihre Identität geben — von Logos, Verpackung bis hin zu Outsole Graphics, Textildrucke und Präsentationen, die konsistent, durchdacht und eng mit dem Produkt verbunden sind.",
+      "body_html": "Unsere Grafikdesigner entwickelt Details, die einem Brand ihre <strong>Identität</strong> geben — von <strong>Logos</strong>, Verpackung bis hin zu Outsole <strong>Graphics</strong>, <strong>Textildrucke</strong> und Präsentationen, die konsistent, durchdacht und eng mit dem Produkt verbunden sind."
     }
   },
   "innovation": {
     "heading": "INNOVATION / TECH HUB",
-    "intro1_html": "Unsere Abteilung für <strong>Innovation</strong> und <strong>technische</strong> Entwicklung verwandelt Konzepte in produktionsreife Produkte – durch eine Kombination aus digitalem Design und technischer Kompetenz.",
-    "intro2_html": "Von <strong>3D-Modellierung,</strong> Prototyping und Rendering bis hin zu Tech-Packs, Konstruktionsspezifikationen, Anpassungstests und Fabrikkoordination <strong>begleiten</strong> wir den gesamten Entwicklungsprozess vom Konzept bis zur Produktion.",
+    "intro1_html": "Unsere Division für <strong>Innovation</strong> und <strong>technische</strong> Entwicklung verwandelt Konzepte mithilfe von digitalem Design und technischem know-how in produktionsreife Produkte.",
+    "intro2_html": "Von <strong>3D-Design</strong>, Prototyping und Renderings bis hin zu Tech Packs, Konstruktionsdetails, Passformtests und der Abstimmung mit Produktionspartnern <strong>unterstützen</strong> wir den gesamten Entwicklungsprozess — von der ersten Idee bis zur Serienproduktion.",
     "pillar1": "Design",
     "pillar2": "Kreativität",
     "pillar3": "Technologie",
@@ -66,10 +70,10 @@
   },
   "contact": {
     "teaser_heading": "Willst du mehr erfahren?",
-    "teaser_body1": "Sprich uns an – für Design, Entwicklung, Kollaborationen oder neue Ideen, die es wert sind, umgesetzt zu werden.",
-    "teaser_body2": "Wir sind immer auf der Suche nach ambitionierten Marken, frischen Perspektiven und spannenden Projekten.",
+    "teaser_body1": "Lass uns über Design, Entwicklung, zukünftige Kollaborationen und neue Ideen sprechen, die Potenzial haben.",
+    "teaser_body2": "Wir sind immer offen für ambitionierte Brands, frische Perspektiven und spannende Projekte.",
     "heading": "Lass uns zusammenarbeiten",
-    "name": "Name",
+    "name": "Vorame",
     "surname": "Nachname",
     "firm": "Firma",
     "email": "E-Mail",
@@ -77,6 +81,10 @@
     "privacy": "Ich habe die",
     "privacyLink": "Datenschutzerklärung",
     "send": "SENDEN"
+  },
+  "privacy": {
+    "heading": "Datenschutzerklärung",
+    "placeholder": "Die Datenschutzerklärung folgt in Kürze."
   },
   "footer": {
     "homepage": "Startseite",

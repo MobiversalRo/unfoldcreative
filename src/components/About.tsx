@@ -1,11 +1,13 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import Link from "next/link";
 import Image from "next/image";
 
 export default function About() {
   const tAbout = useTranslations("about");
   const tMission = useTranslations("mission");
+  const locale = useLocale();
 
   return (
     <>
@@ -27,13 +29,15 @@ export default function About() {
 
             {/* Right: heading right-aligned, body centred */}
             <div className="flex flex-col">
-              <h2 className="text-right text-[30px] font-bold uppercase underline underline-offset-4 mb-10">
-                {tAbout("heading")}
+              <h2 className="text-right text-[30px] font-bold uppercase mb-10">
+                <Link href={`/${locale}/about`} className="underline underline-offset-4 hover:opacity-60 transition-opacity">
+                  {tAbout("heading")}
+                </Link>
               </h2>
-              <p className="text-[15px] leading-relaxed text-[#5E5E5E] text-center mb-6">
+              <p className="text-[20px] leading-relaxed text-[#5E5E5E] text-center mb-6">
                 {tAbout.rich("body1_html", { strong: (c) => <strong className="text-black">{c}</strong> })}
               </p>
-              <p className="text-[15px] leading-relaxed text-[#5E5E5E] text-center">
+              <p className="text-[20px] leading-relaxed text-[#5E5E5E] text-center">
                 {tAbout.rich("body2_html", { strong: (c) => <strong className="text-black">{c}</strong> })}
               </p>
             </div>
@@ -50,10 +54,10 @@ export default function About() {
             <h2 className="text-center text-[30px] font-bold uppercase underline underline-offset-4 mb-14">
               {tMission("heading")}
             </h2>
-            <p className="text-[15px] leading-relaxed text-[#5E5E5E] text-center mb-8">
+            <p className="text-[20px] leading-relaxed text-[#5E5E5E] text-center mb-8">
               {tMission.rich("body1_html", { strong: (c) => <strong className="text-black">{c}</strong> })}
             </p>
-            <p className="text-[15px] leading-relaxed text-[#5E5E5E] text-center">
+            <p className="text-[20px] leading-relaxed text-[#5E5E5E] text-center">
               {tMission.rich("body2_html", { strong: (c) => <strong className="text-black">{c}</strong> })}
             </p>
           </div>

@@ -1,17 +1,21 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import Link from "next/link";
 import Image from "next/image";
 import HoverImage from "./HoverImage";
 
 export default function Departments() {
   const t = useTranslations("departments");
+  const locale = useLocale();
 
   return (
-    <section id="departments" className="bg-white text-black pt-20 lg:pt-28 pb-12 px-6">
+    <section id="departments" className="bg-white text-black pt-28 lg:pt-36 pb-12 px-6">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-center text-[30px] font-bold uppercase underline underline-offset-4 mb-16">
-          {t("heading")}
+        <h2 className="text-center text-[30px] font-bold uppercase mb-16">
+          <Link href={`/${locale}/departments`} className="underline underline-offset-4 hover:opacity-60 transition-opacity">
+            {t("heading")}
+          </Link>
         </h2>
 
         {/* ── 3-column editorial intro: narrow | wide | narrow ── */}
@@ -29,7 +33,7 @@ export default function Departments() {
 
           {/* Center: text near top, sketch pinned to bottom */}
           <div className="flex flex-col lg:px-8 lg:pt-16 lg:self-stretch">
-            <p className="text-[15px] leading-relaxed text-[#5E5E5E] text-center">
+            <p className="text-[20px] leading-relaxed text-[#5E5E5E] text-center">
               {t.rich("intro_html", { strong: (chunks) => <strong className="text-black">{chunks}</strong> })}
             </p>
             <div className="relative aspect-[4/3] mt-auto">
