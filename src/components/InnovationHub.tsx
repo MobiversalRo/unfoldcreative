@@ -8,7 +8,7 @@ export default function InnovationHub() {
   const t = useTranslations("innovation");
 
   return (
-    <section id="innovation" className="bg-white text-black py-20 lg:py-28 px-6">
+    <section id="innovation" className="bg-white text-black py-20 lg:py-28 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto">
 
         {/* Centred heading */}
@@ -16,11 +16,27 @@ export default function InnovationHub() {
           {t("heading")}
         </h2>
 
-        {/* 3-column layout — items-end aligns all column bottoms on the same line */}
-        <div className="hidden lg:flex items-end justify-center gap-6">
+        {/* Mobile layout — video + text + image */}
+        <div className="flex flex-col gap-6 lg:hidden overflow-hidden">
+          <div className="relative w-full aspect-square overflow-hidden" style={{ maskImage: "radial-gradient(circle, black 55%, transparent 75%)", WebkitMaskImage: "radial-gradient(circle, black 55%, transparent 75%)" }}>
+            <LazyVideo src="/videos/data-viz.mp4" poster="/images/poster-data-viz.png" className="w-full h-full object-cover" />
+          </div>
+          <p className="text-[20px] leading-relaxed text-[#5E5E5E] text-center">
+            {t.rich("intro1_html", { strong: (c) => <strong className="text-black">{c}</strong> })}
+          </p>
+          <p className="text-[20px] leading-relaxed text-[#5E5E5E] text-center">
+            {t.rich("intro2_html", { strong: (c) => <strong className="text-black">{c}</strong> })}
+          </p>
+          <div className="relative w-full aspect-[400/507] overflow-hidden">
+            <Image src="/images/pink-heels.png" alt="Creative footwear design" fill className="object-cover" sizes="100vw" />
+          </div>
+        </div>
 
-          {/* Left: 400×442 */}
-          <div className="relative flex-shrink-0 overflow-hidden" style={{ width: 400, height: 442 }}>
+        {/* Desktop layout — 3-column */}
+        <div className="hidden lg:flex items-end justify-center gap-28 overflow-hidden">
+
+          {/* Left: 295×560 — starts at gif midpoint, ends with text */}
+          <div className="relative flex-shrink-0 overflow-hidden" style={{ width: 295, height: 560 }}>
             <Image
               src="/images/robot-shoe.png"
               alt="Innovation and technology"
@@ -30,13 +46,13 @@ export default function InnovationHub() {
             />
           </div>
 
-          {/* Center: video + text */}
-          <div className="flex flex-col" style={{ width: 590 }}>
-            <div className="relative overflow-hidden" style={{ width: 590, height: 590 }}>
+          {/* Center: video 505×505 + text */}
+          <div className="flex flex-col" style={{ width: 505 }}>
+            <div className="relative overflow-hidden" style={{ width: 505, height: 505, maskImage: "radial-gradient(circle, black 55%, transparent 75%)", WebkitMaskImage: "radial-gradient(circle, black 55%, transparent 75%)" }}>
               <LazyVideo
                 src="/videos/data-viz.mp4"
                 poster="/images/poster-data-viz.png"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover scale-100"
               />
             </div>
             <div className="pt-8">
@@ -49,8 +65,8 @@ export default function InnovationHub() {
             </div>
           </div>
 
-          {/* Right: 400×507 */}
-          <div className="relative flex-shrink-0 overflow-hidden" style={{ width: 400, height: 507 }}>
+          {/* Right: 295×560 — starts at gif midpoint, ends with text */}
+          <div className="relative flex-shrink-0 overflow-hidden" style={{ width: 295, height: 560 }}>
             <Image
               src="/images/pink-heels.png"
               alt="Creative footwear design"

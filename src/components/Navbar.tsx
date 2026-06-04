@@ -87,7 +87,7 @@ export default function Navbar() {
                 alt=""
                 width={36}
                 height={36}
-                className={`menu-icon-spin transition-all duration-300 ${isDarkHero ? "invert brightness-200" : ""}`}
+                className={`menu-icon-spin`}
                 aria-hidden="true"
               />
               <span>{t("menu")}</span>
@@ -122,7 +122,7 @@ export default function Navbar() {
                 alt=""
                 width={36}
                 height={36}
-                className={`menu-icon-spin transition-all duration-300 ${isDarkHero ? "invert brightness-200" : ""}`}
+                className={`menu-icon-spin`}
                 aria-hidden="true"
               />
               <span>{t("menu")}</span>

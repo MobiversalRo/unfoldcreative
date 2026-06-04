@@ -49,7 +49,7 @@ export default function Departments() {
 
           {/* Right: stretches to match left column height, images fill proportionally */}
           <div className="flex flex-col gap-4 lg:self-stretch">
-            <div className="relative overflow-hidden [flex:260]">
+            <div className="relative aspect-[4/3] lg:aspect-auto overflow-hidden [flex:260]">
               <HoverImage
                 colorSrc="/images/tools-color.jpeg"
                 bwSrc="/images/tools-bw.jpeg"
@@ -57,7 +57,7 @@ export default function Departments() {
                 sizes="(max-width: 1024px) 100vw, 20vw"
               />
             </div>
-            <div className="relative overflow-hidden [flex:195]">
+            <div className="relative aspect-[4/3] lg:aspect-auto overflow-hidden [flex:195]">
               <HoverImage
                 colorSrc="/images/sneaker-fabric-color.jpeg"
                 bwSrc="/images/sneaker-fabric-bw.jpeg"
