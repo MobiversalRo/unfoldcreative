@@ -55,7 +55,48 @@ export default function Navbar() {
     <>
       {/* ── Top navbar ── */}
       <header className="fixed top-0 left-0 right-0 z-50">
-        <div className="px-6 py-4 flex items-center justify-between">
+
+        {/* Mobile: two rows — language row on top, logo + menu below */}
+        <div className="flex flex-col md:hidden px-6 pt-3 pb-2">
+          {/* Row 1: language switcher right-aligned */}
+          <div className={`flex justify-end ${fg} text-[10px] font-bold tracking-widest transition-colors duration-300`}>
+            <button onClick={() => switchLocale("de")} className={`px-1.5 py-1 transition-opacity ${locale === "de" ? "opacity-100" : "opacity-40 hover:opacity-70"}`}>DE</button>
+            <span className="opacity-30 py-1">/</span>
+            <button onClick={() => switchLocale("en")} className={`px-1.5 py-1 transition-opacity ${locale === "en" ? "opacity-100" : "opacity-40 hover:opacity-70"}`}>EN</button>
+          </div>
+          {/* Row 2: logo left, menu right */}
+          <div className="flex items-center justify-between">
+            <Link href={`/${locale}`} className="drop-shadow-sm">
+              <span className={`${fg} leading-tight block transition-colors duration-300`}>
+                <span className="text-[20px] font-normal tracking-[0.04em] uppercase">
+                  UNFOLD<span className="font-black">CREATIVE</span>
+                </span>
+                <br />
+                <span className="text-[12px] tracking-[0.08em]">
+                  <span className="font-bold">Footwear</span>&nbsp;&nbsp;<span className="font-light">Design</span>
+                </span>
+              </span>
+            </Link>
+            <button
+              className={`flex flex-col items-center gap-1 ${fg} text-[14px] font-bold tracking-widest uppercase transition-colors duration-300`}
+              onClick={() => setMenuOpen(true)}
+              aria-label="Open menu"
+            >
+              <Image
+                src="/images/menu-icon.png"
+                alt=""
+                width={36}
+                height={36}
+                className={`menu-icon-spin transition-all duration-300 ${isDarkHero ? "invert brightness-200" : ""}`}
+                aria-hidden="true"
+              />
+              <span>{t("menu")}</span>
+            </button>
+          </div>
+        </div>
+
+        {/* Desktop: single row */}
+        <div className="hidden md:flex px-6 py-4 items-center justify-between">
           {/* Logo */}
           <Link href={`/${locale}`} className="drop-shadow-sm">
             <span className={`${fg} leading-tight block transition-colors duration-300`}>
@@ -70,7 +111,7 @@ export default function Navbar() {
           </Link>
 
           <div className="flex items-start gap-4">
-            {/* Menu button — icon on top, label below */}
+            {/* Menu button */}
             <button
               className={`flex flex-col items-center gap-1 mt-4 ${fg} text-[14px] font-bold tracking-widest uppercase transition-colors duration-300`}
               onClick={() => setMenuOpen(true)}
@@ -87,7 +128,7 @@ export default function Navbar() {
               <span>{t("menu")}</span>
             </button>
 
-            {/* Language switcher — top-right, ends at the right edge */}
+            {/* Language switcher */}
             <div className={`flex items-center gap-1 ${fg} text-[10px] font-bold tracking-widest transition-colors duration-300`}>
               <button
                 onClick={() => switchLocale("de")}
@@ -104,7 +145,8 @@ export default function Navbar() {
               </button>
             </div>
           </div>
-        </div>
+        </div>{/* end desktop row */}
+
       </header>
 
       {/* ── Full-screen menu overlay ── */}
@@ -136,13 +178,13 @@ export default function Navbar() {
           </span>
         </div>
 
-        {/* 4 pillar image cards */}
-        <div className="flex h-full">
+        {/* 4 pillar image cards — 4 cols on desktop, 2×2 grid on mobile */}
+        <div className="grid grid-cols-2 md:grid-cols-4 md:flex-none h-full w-full">
           {menuItems.map((item) => (
             <button
               key={item.href}
               onClick={() => handleNavClick(item.href)}
-              className="flex-1 flex flex-col group cursor-pointer border-r border-white/10 last:border-r-0 overflow-hidden"
+              className="flex flex-col group cursor-pointer border-r border-b border-white/10 last:border-r-0 md:border-b-0 overflow-hidden"
             >
               {/* ── Main image (65% height) with centred label ── */}
               <div className="relative w-full flex-[0_0_65%] overflow-hidden">
@@ -151,13 +193,13 @@ export default function Navbar() {
                   alt={item.label}
                   fill
                   className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                  sizes="25vw"
+                  sizes="(max-width: 768px) 50vw, 25vw"
                 />
                 {/* Slight dark overlay for legibility */}
                 <div className="absolute inset-0 bg-black/25" />
                 {/* Centred label */}
                 <div className="absolute inset-0 flex items-center justify-center px-3">
-                  <span className="text-[#f5ff3c] font-bold text-[30px] tracking-[0.1em] uppercase leading-tight text-center drop-shadow-lg">
+                  <span className="text-[#f5ff3c] font-bold text-[22px] md:text-[30px] tracking-[0.1em] uppercase leading-tight text-center drop-shadow-lg">
                     {item.label}
                   </span>
                 </div>
@@ -165,18 +207,24 @@ export default function Navbar() {
 
               {/* ── Mirror reflection (35% height) ── */}
               <div className="relative w-full flex-[0_0_35%] overflow-hidden bg-white">
-                {/* Same image, flipped vertically */}
-                <Image
-                  src={item.image}
-                  alt=""
+                {/* Wrapper is 185% tall — Image fills it completely.
+                    overflow-hidden on parent clips the bottom 85%.
+                    scaleY(-1) on wrapper flips the visible top portion. */}
+                <div
                   aria-hidden="true"
-                  fill
-                  className="object-cover object-center opacity-50"
-                  style={{ transform: "scaleY(-1)" }}
-                  sizes="25vw"
-                />
-                {/* White gradient: fades from transparent at top to white at bottom */}
-                <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-white/60 to-white" />
+                  className="absolute inset-x-0 top-0 opacity-50"
+                  style={{ height: "185%", transform: "scaleY(-1)" }}
+                >
+                  <Image
+                    src={item.image}
+                    alt=""
+                    fill
+                    className="object-cover object-center"
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                  />
+                </div>
+                {/* Gradient: transparent at top, fully white at bottom */}
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white" />
               </div>
             </button>
           ))}
