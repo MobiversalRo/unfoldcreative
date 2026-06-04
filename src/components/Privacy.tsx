@@ -22,7 +22,7 @@ const CONTENT: Record<string, Section[]> = {
       title: "1. Controller",
       blocks: [
         { type: "paragraph", text: "The controller responsible for the processing of personal data on this website is:" },
-        { type: "address", lines: ["Unfold Creative S.R.L.", "Ioan Corneli 2", "Oradea, 410595 Romania", "info@unfoldcreative.com", "+40 778788571"] },
+        { type: "address", lines: ["Unfold Creative S.R.L.", "Ioan Corneli 2", "Oradea, 410595 Romania", "info@unfoldcreative-design.com", "+40 778788571"] },
       ],
     },
     {
@@ -89,7 +89,7 @@ const CONTENT: Record<string, Section[]> = {
           "Right to object to certain processing activities",
           "Right to withdraw consent previously given",
         ]},
-        { type: "paragraph", text: "To exercise your rights, you may contact us at any time at info@unfoldcreative.com." },
+        { type: "paragraph", text: "To exercise your rights, you may contact us at any time at info@unfoldcreative-design.com." },
       ],
     },
     {
@@ -121,7 +121,7 @@ const CONTENT: Record<string, Section[]> = {
       title: "1. Verantwortlicher",
       blocks: [
         { type: "paragraph", text: "Verantwortlich für die Verarbeitung personenbezogener Daten auf dieser Website ist:" },
-        { type: "address", lines: ["Unfold Creative S.R.L.", "Ioan Corneli 2", "Oradea, 410595 Rumänien", "info@unfoldcreative.com", "+40 778788571"] },
+        { type: "address", lines: ["Unfold Creative S.R.L.", "Ioan Corneli 2", "Oradea, 410595 Rumänien", "info@unfoldcreative-design.com", "+40 778788571"] },
       ],
     },
     {
@@ -188,7 +188,7 @@ const CONTENT: Record<string, Section[]> = {
           "Recht auf Widerspruch gegen bestimmte Verarbeitungen",
           "Recht auf Widerruf einer erteilten Einwilligung",
         ]},
-        { type: "paragraph", text: "Zur Ausübung Ihrer Rechte können Sie uns jederzeit unter info@unfoldcreative.com kontaktieren." },
+        { type: "paragraph", text: "Zur Ausübung Ihrer Rechte können Sie uns jederzeit unter info@unfoldcreative-design.com kontaktieren." },
       ],
     },
     {

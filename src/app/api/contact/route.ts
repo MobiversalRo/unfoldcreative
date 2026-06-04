@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
     const resend = new Resend(apiKey);
 
     const { error } = await resend.emails.send({
-      from: "UnfoldCreative Contact <onboarding@resend.dev>", // replace with your verified domain e.g. noreply@unfoldcreative.com
+      from: "UnfoldCreative Contact <noreply@unfoldcreative-design.com>",
       to: [process.env.NODE_ENV === "development" ? "roxana.dan@mobiversal.com" : "info@unfoldcreative-design.com"],
       replyTo: email,
       subject: `New contact from ${name} ${surname}${firm ? ` — ${firm}` : ""}`,
