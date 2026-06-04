@@ -223,8 +223,8 @@ export default function Navbar() {
                     sizes="(max-width: 768px) 50vw, 25vw"
                   />
                 </div>
-                {/* Gradient: transparent at top, fully white at bottom */}
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white" />
+                {/* Gradient: transparent at top → solid white from 75% down (last quarter = completely white) */}
+                <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, transparent 0%, white 75%)" }} />
               </div>
             </button>
           ))}

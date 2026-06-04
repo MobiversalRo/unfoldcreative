@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useRef, useEffect, useState } from "react";
 
 interface HoverImageProps {
   colorSrc: string;
@@ -8,13 +9,12 @@ interface HoverImageProps {
   alt: string;
   sizes?: string;
   className?: string;
-  /** Extra classes applied to both image layers (e.g. object-cover) */
   imgClassName?: string;
 }
 
 /**
- * Shows the colour image by default; the B&W version overlays on hover.
- * Wrap in a sized parent (e.g. relative aspect-[x/y]).
+ * Desktop: B&W overlays on hover.
+ * Mobile:  starts B&W, transitions to colour when scrolled into view.
  */
 export default function HoverImage({
   colorSrc,
@@ -23,9 +23,30 @@ export default function HoverImage({
   sizes = "50vw",
   imgClassName = "object-cover",
 }: HoverImageProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+          observer.disconnect(); // trigger once only
+        }
+      },
+      { threshold: 0.35 }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="group absolute inset-0">
-      {/* Colour — always visible underneath */}
+    <div ref={containerRef} className="group absolute inset-0">
+      {/* Colour — always underneath */}
       <Image
         src={colorSrc}
         alt={alt}
@@ -33,13 +54,17 @@ export default function HoverImage({
         className={imgClassName}
         sizes={sizes}
       />
-      {/* B&W — fades in on hover */}
+      {/* B&W layer:
+          - Mobile:   visible by default → fades out when in view
+          - Desktop:  hidden by default  → fades in on hover         */}
       <Image
         src={bwSrc}
         alt=""
         aria-hidden="true"
         fill
-        className={`${imgClassName} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+        className={`${imgClassName} transition-opacity duration-700
+          ${inView ? "opacity-0" : "opacity-100"}
+          md:opacity-0 md:group-hover:opacity-100`}
         sizes={sizes}
       />
     </div>
