@@ -3,11 +3,26 @@
 import { useTranslations, useLocale } from "next-intl";
 import Link from "next/link";
 import Image from "next/image";
+import { useRef, useEffect, useState } from "react";
 
 export default function About() {
   const tAbout = useTranslations("about");
   const tMission = useTranslations("mission");
   const locale = useLocale();
+
+  const missionImgRef = useRef<HTMLDivElement>(null);
+  const [missionInView, setMissionInView] = useState(false);
+
+  useEffect(() => {
+    const el = missionImgRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { setMissionInView(true); observer.disconnect(); } },
+      { threshold: 0.35 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <>
@@ -63,7 +78,7 @@ export default function About() {
           </div>
 
           {/* Right: gold divider + shoe hover effect (B&W → colour) */}
-          <div className="group relative flex items-center justify-center px-6 lg:px-16 py-10 lg:py-0">
+          <div ref={missionImgRef} className="group relative flex items-center justify-center px-6 lg:px-16 py-10 lg:py-0">
             {/* Colour image — always underneath */}
             <Image
               src="/images/love-shoe.png"
@@ -74,15 +89,17 @@ export default function About() {
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
 
-            {/* B&W image — sits on top, fades away on hover */}
+            {/* B&W image — fades on hover (desktop) or on scroll into view (mobile) */}
             <Image
               src="/images/love-shoe-bw.jpg"
               alt=""
               aria-hidden="true"
               width={520}
               height={600}
-              className="absolute inset-0 w-full h-full object-contain max-h-[560px] z-10
-                         opacity-100 group-hover:opacity-0 transition-opacity duration-500"
+              className={`absolute inset-0 w-full h-full object-contain max-h-[560px] z-10
+                         transition-opacity duration-700
+                         ${missionInView ? "opacity-0" : "opacity-100"}
+                         md:opacity-100 md:group-hover:opacity-0`}
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>

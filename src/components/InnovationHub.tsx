@@ -16,8 +16,11 @@ export default function InnovationHub() {
           {t("heading")}
         </h2>
 
-        {/* Mobile layout — video + text + image */}
+        {/* Mobile layout — stacked */}
         <div className="flex flex-col gap-6 lg:hidden overflow-hidden">
+          <div className="relative w-full aspect-[400/442] overflow-hidden">
+            <Image src="/images/robot-shoe.png" alt="Innovation and technology" fill className="object-cover" sizes="100vw" />
+          </div>
           <div className="relative w-full aspect-square overflow-hidden" style={{ maskImage: "radial-gradient(circle, black 55%, transparent 75%)", WebkitMaskImage: "radial-gradient(circle, black 55%, transparent 75%)" }}>
             <LazyVideo src="/videos/data-viz.mp4" poster="/images/poster-data-viz.png" className="w-full h-full object-cover" />
           </div>
