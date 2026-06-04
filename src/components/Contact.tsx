@@ -149,14 +149,14 @@ export default function Contact() {
 
             {/* Message */}
             <div className="border-b border-black/25 pb-4">
-              <span className="text-sm text-[#5E5E5E] block mb-3">{t("message")}</span>
+              <span className="text-sm text-[#5E5E5E] block mb-2">{t("message")}</span>
               <textarea
                 ref={messageRef}
                 rows={1}
                 value={fields.message}
                 onChange={set("message")}
                 required
-                className="w-full outline-none text-sm bg-transparent resize-none overflow-hidden min-h-[120px]"
+                className="w-full outline-none text-sm bg-transparent resize-none overflow-hidden min-h-[100px] caret-black"
                 aria-label={t("message")}
               />
             </div>

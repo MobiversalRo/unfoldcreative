@@ -24,7 +24,7 @@ export default function Footer() {
             <a
               key={link.label}
               href={link.href}
-              className="text-white/60 hover:text-white text-[20px] tracking-wide transition-colors"
+              className="text-white/60 hover:text-white text-[13px] md:text-[20px] tracking-wide transition-colors"
               {...(link.href.startsWith("https") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
             >
               {link.label}
