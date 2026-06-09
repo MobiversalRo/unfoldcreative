@@ -12,7 +12,7 @@ export default function Footer() {
     { label: t("contact"),     href: `/${locale}/contact` },
     { label: t("innovation"),  href: `/${locale}/innovation` },
     { label: t("departments"), href: `/${locale}/departments` },
-    { label: t("instagram"),   href: "https://instagram.com" },
+    { label: t("instagram"),   href: "https://www.instagram.com/unfoldcreative__?utm_source=qr" },
   ];
 
   return (
