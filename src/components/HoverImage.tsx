@@ -64,7 +64,7 @@ export default function HoverImage({
         fill
         className={`${imgClassName} transition-opacity duration-700
           ${inView ? "opacity-0" : "opacity-100"}
-          md:opacity-0 md:group-hover:opacity-100`}
+          md:opacity-100 md:group-hover:opacity-0`}
         sizes={sizes}
       />
     </div>

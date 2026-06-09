@@ -2,13 +2,13 @@
   "nav": {
     "about": "Über uns",
     "departments": "Abteilungen",
-    "innovation": "Innovation Hub",
+    "innovation": "Innovation",
     "contact": "Kontakt",
     "menu": "Menü"
   },
   "hero": {
-    "bannerLine1": "WIR GESTALTEN SCHUHE UND ACCESSOIRES FÜR DIE VERBRAUCHER",
-    "bannerLine2": "DER WELT!"
+    "bannerLine1": "WE CREATE SHOES AND ACCESSORIES FOR THE CONSUMERS",
+    "bannerLine2": "OF THE WORLD!"
   },
   "about": {
     "heading": "ÜBER UNS",
@@ -23,7 +23,7 @@
   "team": {
     "role1": "Geschäftsführer",
     "role2": "Designer",
-    "role3": "Innovation Lab / Grafik",
+    "role3": "Innovation Lab",
     "role4": "Designer"
   },
   "departments": {
@@ -60,7 +60,7 @@
     }
   },
   "innovation": {
-    "heading": "INNOVATION / TECH HUB",
+    "heading": "INNOVATION",
     "intro1_html": "Unsere Division für <strong>Innovation</strong> und <strong>technische</strong> Entwicklung verwandelt Konzepte mithilfe von digitalem Design und technischem know-how in produktionsreife Produkte.",
     "intro2_html": "Von <strong>3D-Design</strong>, Prototyping und Renderings bis hin zu Tech Packs, Konstruktionsdetails, Passformtests und der Abstimmung mit Produktionspartnern <strong>unterstützen</strong> wir den gesamten Entwicklungsprozess — von der ersten Idee bis zur Serienproduktion.",
     "pillar1": "Design",
@@ -90,7 +90,7 @@
     "homepage": "Startseite",
     "about": "Über uns",
     "contact": "Kontakt",
-    "innovation": "Innovation Hub",
+    "innovation": "Innovation",
     "departments": "Abteilungen",
     "instagram": "Instagram",
     "logo": "UNFOLDCREATIVE Footwear Design"

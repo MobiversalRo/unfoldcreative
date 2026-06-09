@@ -10,10 +10,10 @@ export default function Departments() {
   const locale = useLocale();
 
   return (
-    <section id="departments" className="bg-white text-black pt-28 lg:pt-36 pb-12 px-6">
+    <section id="departments" className="bg-white text-black py-32 px-6">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-center text-[30px] font-bold uppercase mb-16">
-          <Link href={`/${locale}/departments`} className="underline underline-offset-4 hover:opacity-60 transition-opacity">
+          <Link href={`/${locale}/departments`} className="hover:opacity-60 transition-opacity">
             {t("heading")}
           </Link>
         </h2>

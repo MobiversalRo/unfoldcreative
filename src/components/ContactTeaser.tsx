@@ -8,7 +8,7 @@ export default function ContactTeaser() {
   const locale = useLocale();
 
   return (
-    <section className="bg-white py-24 lg:py-32 px-6">
+    <section className="bg-white py-32 px-6">
       {/* Base is the full-width reference — lid is inset so base appears wider */}
       <div className="max-w-[960px] mx-auto">
 

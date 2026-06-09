@@ -1,19 +1,23 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import Link from "next/link";
 import Image from "next/image";
 import LazyVideo from "./LazyVideo";
 
 export default function InnovationHub() {
   const t = useTranslations("innovation");
+  const locale = useLocale();
 
   return (
-    <section id="innovation" className="bg-white text-black py-20 lg:py-28 px-6 overflow-hidden">
+    <section id="innovation" className="bg-white text-black py-32 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto">
 
         {/* Centred heading */}
-        <h2 className="text-center text-[30px] font-bold uppercase underline underline-offset-4 mb-10">
-          {t("heading")}
+        <h2 className="text-center text-[30px] font-bold uppercase mb-10">
+          <Link href={`/${locale}/innovation`} className="hover:opacity-60 transition-opacity">
+            {t("heading")}
+          </Link>
         </h2>
 
         {/* Mobile layout — stacked */}

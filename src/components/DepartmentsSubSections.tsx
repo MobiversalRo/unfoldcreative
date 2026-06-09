@@ -126,7 +126,7 @@ export default function DepartmentsSubSections() {
           heading={t("graphics.heading")}
           body={t.rich("graphics.body_html", { strong: (c) => <strong className="text-black">{c}</strong> })}
           images={[
-            { colorSrc: "/images/sneaker-running-illustration.png", alt: "Running shoe technical illustration", width: 336, height: 327 },
+            { colorSrc: "/images/sneaker-running-illustration.jpeg", alt: "Running shoe technical illustration", width: 336, height: 327 },
             { colorSrc: "/images/graphics-floral.png", alt: "Floral graphic print", width: 356, height: 327 },
           ]}
         />

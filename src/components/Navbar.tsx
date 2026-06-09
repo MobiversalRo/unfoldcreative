@@ -110,10 +110,10 @@ export default function Navbar() {
             </span>
           </Link>
 
-          <div className="flex items-start gap-4">
+          <div className="flex items-center gap-4">
             {/* Menu button */}
             <button
-              className={`flex flex-col items-center gap-1 mt-4 ${fg} text-[14px] font-bold tracking-widest uppercase transition-colors duration-300`}
+              className={`flex flex-col items-center gap-1 mr-2 ${fg} text-[14px] font-bold tracking-widest uppercase transition-colors duration-300`}
               onClick={() => setMenuOpen(true)}
               aria-label="Open menu"
             >

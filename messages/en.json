@@ -2,7 +2,7 @@
   "nav": {
     "about": "About Us",
     "departments": "Departments",
-    "innovation": "Innovation Hub",
+    "innovation": "Innovation",
     "contact": "Contact Us",
     "menu": "Menu"
   },
@@ -23,7 +23,7 @@
   "team": {
     "role1": "Managing Director",
     "role2": "Designer",
-    "role3": "Innovation Lab / Graphics",
+    "role3": "Innovation Lab",
     "role4": "Designer"
   },
   "departments": {
@@ -60,7 +60,7 @@
     }
   },
   "innovation": {
-    "heading": "INNOVATION / TECH HUB",
+    "heading": "INNOVATION",
     "intro1_html": "Our <strong>Innovation</strong> and <strong>Technical</strong> Development division turns concepts into production-ready products through a combination of digital design and technical expertise.",
     "intro2_html": "From <strong>3D modeling,</strong> prototyping, and rendering to tech packs, construction specs, fit testing, and factory coordination, we <strong>support</strong> the full development process from concept to production.",
     "pillar1": "Design",
@@ -90,7 +90,7 @@
     "homepage": "Homepage",
     "about": "About us",
     "contact": "Contact us",
-    "innovation": "Innovation hub",
+    "innovation": "Innovation",
     "departments": "Departments",
     "instagram": "Instagram",
     "logo": "UNFOLDCREATIVE Footwear Design"

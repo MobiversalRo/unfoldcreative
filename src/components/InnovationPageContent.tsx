@@ -11,7 +11,7 @@ const PILLARS = [
     imageAlt: "Break The Rules neon sign",
     imageLeft: true,
     aspect: "307/370",
-    imageWidth: "27%",   // 307pt
+    imageWidth: "40%",
   },
   {
     wordKey: "pillar2" as const,        // Creativity
@@ -19,7 +19,7 @@ const PILLARS = [
     imageAlt: "Pink dripping heels",
     imageLeft: false,
     aspect: "307/390",
-    imageWidth: "27%",   // 307pt
+    imageWidth: "40%",
   },
   {
     wordKey: "pillar3" as const,        // Technology
@@ -28,7 +28,7 @@ const PILLARS = [
     imageAlt: "Robot arm technology",
     imageLeft: true,
     aspect: "302/368",
-    imageWidth: "26%",   // 302pt
+    imageWidth: "40%",
   },
   {
     wordKey: "pillar4" as const,        // Innovation
@@ -36,7 +36,7 @@ const PILLARS = [
     imageAlt: "Innovation",
     imageLeft: false,
     aspect: "307/316",
-    imageWidth: "27%",   // 307pt
+    imageWidth: "40%",
   },
 ];
 
@@ -115,7 +115,7 @@ export default function InnovationPageContent() {
           <div className="hidden lg:flex items-start px-[5%] py-14">
             <div className="flex-shrink-0" style={{ width: pillar.imageWidth }}>
               <div className="relative w-full overflow-hidden" style={{ aspectRatio: pillar.aspect }}>
-                <PillarMedia pillar={pillar} sizes="30vw" />
+                <PillarMedia pillar={pillar} sizes="40vw" />
               </div>
             </div>
             <div className="flex-1 flex items-start pt-2">
@@ -133,7 +133,7 @@ export default function InnovationPageContent() {
             </div>
             <div className="flex-shrink-0" style={{ width: pillar.imageWidth }}>
               <div className="relative w-full overflow-hidden" style={{ aspectRatio: pillar.aspect }}>
-                <PillarMedia pillar={pillar} sizes="30vw" />
+                <PillarMedia pillar={pillar} sizes="40vw" />
               </div>
             </div>
           </div>

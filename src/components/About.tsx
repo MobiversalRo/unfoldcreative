@@ -27,7 +27,7 @@ export default function About() {
   return (
     <>
       {/* ABOUT US */}
-      <section id="about" className="bg-white text-black py-20 lg:py-32 px-6">
+      <section id="about" className="bg-white text-black py-32 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             {/* Left: blurry B&W image — 442×254pt ratio */}
@@ -45,7 +45,7 @@ export default function About() {
             {/* Right: heading right-aligned, body centred */}
             <div className="flex flex-col">
               <h2 className="text-right text-[30px] font-bold uppercase mb-10">
-                <Link href={`/${locale}/about`} className="underline underline-offset-4 hover:opacity-60 transition-opacity">
+                <Link href={`/${locale}/about`} className="hover:opacity-60 transition-opacity">
                   {tAbout("heading")}
                 </Link>
               </h2>
@@ -61,12 +61,12 @@ export default function About() {
       </section>
 
       {/* MISSION */}
-      <section className="bg-white text-black py-20 lg:py-32">
+      <section className="bg-white text-black py-32">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 min-h-[520px]">
 
           {/* Left: heading centred + two centred paragraphs */}
           <div className="flex flex-col px-6 lg:px-16 py-10 lg:py-0 justify-center">
-            <h2 className="text-center text-[30px] font-bold uppercase underline underline-offset-4 mb-14">
+            <h2 className="text-center text-[30px] font-bold uppercase mb-14">
               {tMission("heading")}
             </h2>
             <p className="text-[20px] leading-relaxed text-[#5E5E5E] text-center mb-8">
@@ -77,31 +77,19 @@ export default function About() {
             </p>
           </div>
 
-          {/* Right: gold divider + shoe hover effect (B&W → colour) */}
-          <div ref={missionImgRef} className="group relative flex items-center justify-center px-6 lg:px-16 py-10 lg:py-0">
-            {/* Colour image — always underneath */}
-            <Image
-              src="/images/love-shoe.png"
-              alt="Love script heel shoe"
-              width={520}
-              height={600}
-              className="object-contain max-h-[560px] w-auto relative z-0"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
-
-            {/* B&W image — fades on hover (desktop) or on scroll into view (mobile) */}
-            <Image
-              src="/images/love-shoe-bw.jpg"
-              alt=""
-              aria-hidden="true"
-              width={520}
-              height={600}
-              className={`absolute inset-0 w-full h-full object-contain max-h-[560px] z-10
-                         transition-opacity duration-700
-                         ${missionInView ? "opacity-0" : "opacity-100"}
-                         md:opacity-100 md:group-hover:opacity-0`}
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
+          {/* Right: shoe hover effect (B&W → colour) */}
+          <div ref={missionImgRef} className="group flex items-center justify-center px-6 lg:px-16 py-10 lg:py-0">
+            <div className="relative w-full max-w-[520px] aspect-[520/600]">
+              <Image
+                src="/images/love-shoe.png"
+                alt="Love script heel shoe"
+                fill
+                className={`object-contain transition-all duration-700
+                           ${missionInView ? "grayscale-0" : "grayscale"}
+                           md:grayscale md:group-hover:grayscale-0`}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
           </div>
         </div>
       </section>
